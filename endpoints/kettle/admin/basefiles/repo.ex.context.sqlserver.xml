@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/pentaho" docbase="webapps/pentaho/">
+  <Resource name="jdbc/Hibernate" auth="Container" type="javax.sql.DataSource"
+            factory="org.apache.commons.dbcp.BasicDataSourceFactory" maxTotal="20" maxIdle="5"
+            maxWaitMillis="10000" username="repoex_username_hibernate" password="repoex_password_hibernate"
+            driverClassName="com.microsoft.sqlserver.jdbc.SQLServerDriver" url="jdbc:sqlserver://repoex_localhost:repoex_port;DatabaseName=repoex_dbname_hibernate"
+            validationQuery="select 1" />
+
+  <Resource name="jdbc/Audit" auth="Container" type="javax.sql.DataSource"
+            factory="org.apache.commons.dbcp.BasicDataSourceFactory" maxTotal="20" maxIdle="5"
+            maxWaitMillis="10000" username="repoex_username_hibernate" password="repoex_password_hibernate"
+            driverClassName="com.microsoft.sqlserver.jdbc.SQLServerDriver" url="jdbc:sqlserver://repoex_localhost:repoex_port;DatabaseName=repoex_dbname_hibernate"
+            validationQuery="select 1" />
+
+  <Resource name="jdbc/Quartz" auth="Container" type="javax.sql.DataSource"
+            factory="org.apache.commons.dbcp.BasicDataSourceFactory" maxTotal="20" maxIdle="5"
+            maxWaitMillis="10000" username="repoex_username_quartz" password="repoex_password_quartz"
+            driverClassName="com.microsoft.sqlserver.jdbc.SQLServerDriver" url="jdbc:sqlserver://repoex_localhost:repoex_port;DatabaseName=repoex_dbname_quartz"
+            validationQuery="select 1"/>
+						
+  <Resource name="jdbc/PDI_Operations_Mart" auth="Container" type="javax.sql.DataSource"
+            factory="org.apache.commons.dbcp.BasicDataSourceFactory" maxTotal="20" maxIdle="5"
+            maxWaitMillis="10000" username="repoex_username_hibernate" password="repoex_password_hibernate"
+            driverClassName="com.microsoft.sqlserver.jdbc.SQLServerDriver" url="jdbc:sqlserver://repoex_localhost:repoex_port;DatabaseName=repoex_dbname_hibernate"
+            validationQuery="select 1"/>
+            
+  <Resource name="jdbc/pentaho_operations_mart" auth="Container" type="javax.sql.DataSource"
+            factory="org.apache.commons.dbcp.BasicDataSourceFactory" maxTotal="20" maxIdle="5"
+            maxWaitMillis="10000" username="repoex_username_hibernate" password="repoex_password_hibernate"
+            driverClassName="com.microsoft.sqlserver.jdbc.SQLServerDriver" url="jdbc:sqlserver://repoex_localhost:repoex_port;DatabaseName=repoex_dbname_hibernate"
+            validationQuery="select 1"/>
+
+</Context>

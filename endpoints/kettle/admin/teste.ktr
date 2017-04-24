@@ -239,7 +239,8 @@
       <line> <item>sample</item><item>0</item> </line>
       <line> <item>transformation</item><item>1</item> </line>
       <line> <item>as</item><item>2</item> </line>
-      <line> <item>enbdpoint</item><item/> </line>
+      <line> <item>endpoint</item><item>3</item> </line>
+      <line> <item>teste</item><item>4444</item> </line>
     </data>
      <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
