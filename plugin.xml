@@ -3,7 +3,7 @@
 <overlays>
 		<overlay id="startup.repoEX" resourcebundle="content/repoEX/resources/lang/messages">
 			<menubar id="toolsmenu">
-	        	<menuitem id="repoEX" label="${Launcher.repoEX}" command="mantleXulHandler.openUrl('${Launcher.repoEX}','${Launcher.repoEX_TOOLTIP}','plugin/repoEX/api/default')"/>
+	        	<menuitem id="Repo.Ex" label="${Launcher.repoEX}" command="mantleXulHandler.openUrl('${Launcher.repoEX}','${Launcher.repoEX_TOOLTIP}','plugin/repoEX/api/default')"/>
 	      	</menubar>
 	    </overlay>
 	</overlays>
@@ -18,7 +18,7 @@
 		<content-type>
 			<title>Repo.EX</title>
 			<description></description>
-			<company name="Oncase" url="http://www.oncase.com.br/en" logo="@PLUGIN_COMPANY_LOGO@"></company>
+			<company name="Oncase" url="http://www.oncase.com.br/en" logo="repoEX/static/system/img/repoEX-logo.png"></company>
 		</content-type>
 	</content-types>
 	<content-generator
