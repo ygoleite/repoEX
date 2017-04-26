@@ -106,7 +106,7 @@
      {
       "name": "resourceCode",
       "type": "Resource",
-      "value": ".row.no-gutter {\r\n  margin-left: 0;\r\n  margin-right: 0;\r\n}\r\n\r\n.row.no-gutter [class*='col-']:not(:first-child),\r\n.row.no-gutter [class*='col-']:not(:last-child) {\r\n  padding-right: 0;\r\n  padding-left: 0;\r\n}\r\n\r\n.radioBox{\r\n    height: 80px;\r\n    margin-top: 2%;\r\n}\r\n\r\n\r\n.divIpBox{\r\n    padding-right: 0px;\r\n}\r\n\r\n.divPortBox{\r\n    padding-left: 0px;\r\n}\r\n\r\n.ipBox{    \r\n    border: solid green 1px;\r\n    border-radius: 10px;\r\n    border-right: 0px;\r\n    border-top-right-radius: 0px;\r\n    border-bottom-right-radius: 0px;    \r\n} \r\n\r\n.portBox{\r\n    \r\n    height:100px;\r\n    border: 1px green solid;\r\n    border-radius: 10px;\r\n    border-left: none;\r\n    border-bottom-left-radius: 0px;\r\n    border-top-left-radius: 0px;\r\n    \r\n}\r\n\r\n\r\n/*\r\n* -- Radio Style --\r\n*/\r\n\r\n.db-sel-rd {\r\n  list-style: none;\r\n  margin: 0;\r\n  padding: 0;\r\n}\r\n\r\n.db-sel-rd:after {\r\n  content: \"\";\r\n  clear: both;\r\n}\r\n\r\n.db-sel-rd {\r\n  border: 1px solid #ccc;\r\n  box-sizing: border-box;\r\n  float: left;\r\n  height: 70px;\r\n  position: relative;\r\n  width: 120px;\r\n  display: -webkit-box;\r\n}\r\n\r\n.db-sel-rd + .db-sel-rd{\r\n  margin-left: 25px;\r\n}\r\n\r\n.db-sel-rd label {\r\n  background: #fff no-repeat center center;\r\n  bottom: 1px;\r\n  cursor: pointer;\r\n  display: block;\r\n  font-size: 0;\r\n  left: 1px;\r\n  position: absolute;\r\n  right: 1px;\r\n  text-indent: 100%;\r\n  top: 1px;\r\n  white-space: nowrap;\r\n}\r\n\r\n.pgsql label {\r\n  background-image: url(/pentaho/content/repoEX/dashboards/resources/img/postgresql.png);\r\n   background-size:contain;\r\n}\r\n\r\n.mysql label {\r\n  background-image: url(/pentaho/content/repoEX/dashboards/resources/img/mysql.png);\r\n   background-size:contain;\r\n}\r\n\r\n.ora label {\r\n  background-image: url(/pentaho/content/repoEX/dashboards/resources/img/oradb.png);\r\n   background-size:contain;\r\n}\r\n\r\n.mssql label {\r\n  background-image: url(/pentaho/content/repoEX/dashboards/resources/img/mssql.png);\r\n   background-size:contain;\r\n}\r\n\r\n.db-sel-rd input:focus + label {\r\n  outline: 2px dotted #88C425;\r\n}\r\n\r\n.db-sel-rd input:checked + label {\r\n  outline: 4px solid #88C425;\r\n  margin: 0px;\r\n}\r\n\r\n.db-sel-rd input:checked + label:after {\r\n  background: url(/pentaho/content/repoEX/dashboards/resources/img/checked.svg);\r\n  background-size:contain;\r\n  background-color:#88C425;\r\n  bottom: -4px;\r\n  content: \"\";\r\n  display: inline-block;\r\n  height: 20px;\r\n  position: absolute;\r\n  right: -4px;\r\n  width: 20px;\r\n} \r\n\r\n@-moz-document url-prefix() {\r\n  .db-sel-rd input:checked + label:after {\r\n    bottom: 0;\r\n    right: 0;\r\n    background-color: #88C425;\r\n  }\r\n}\r\n\r\n\r\n\r\n/*\r\n* -- Checkbox Style --\r\n*/\r\n    .btn-info {\r\n    color: #fff;\r\n    background-color: #88C425;\r\n    border-color: #88C425;\r\n    }\r\n    \r\n    .btn-info:hover, .btn-info:focus, \r\n    .btn-info:active, .btn-info.active, \r\n    .open .dropdown-toggle.btn-info {\r\n    color: #fff;\r\n    background-color: #88C425;\r\n    border-color: #88C425;\r\n    }\r\n\r\n    .form-group input[type=\"checkbox\"] {\r\n    display: none;\r\n    }\r\n    \r\n    .form-group input[type=\"checkbox\"] + .btn-group > label span {\r\n        width: 20px;\r\n    }\r\n    \r\n    .form-group input[type=\"checkbox\"] + .btn-group > label span:first-child {\r\n        display: none;\r\n    }\r\n    .form-group input[type=\"checkbox\"] + .btn-group > label span:last-child {\r\n        display: inline-block;   \r\n    }\r\n    \r\n    .form-group input[type=\"checkbox\"]:checked + .btn-group > label span:first-child {\r\n        display: inline-block;\r\n    }\r\n    .form-group input[type=\"checkbox\"]:checked + .btn-group > label span:last-child {\r\n        display: none;   \r\n    } \r\n\r\n/*\r\n* -- Form Style --\r\n*/\r\n.form-control:focus {\r\n    border-color: #88C425;\r\n}\r\n\r\n.btn-finish {\r\n    display: inline-block;\r\n    padding: 6px 12px;\r\n    margin-bottom: 0;\r\n    font-size: 14px;\r\n    font-weight: normal;\r\n    line-height: 1.42857143;\r\n    text-align: center;\r\n    white-space: nowrap;\r\n    vertical-align: middle;\r\n    cursor: pointer;\r\n    -webkit-user-select: none;\r\n    -moz-user-select: none;\r\n    -ms-user-select: none;\r\n    user-select: none;\r\n    background-image: none;\r\n    border: 1px solid rgb(136, 196, 37);\r\n    border-radius: 4px;\r\n}\r\n\r\na {\r\n    color: #fff;\r\n    text-decoration: none;\r\n}\r\n\r\na {\r\n    background: #88c425;\r\n}\r\n\r\n "
+      "value": "body{\r\n    font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\r\n    font-size: 14px;\r\n    line-height: 1.42857143;\r\n    color: #58585A;\r\n}\r\n\r\n.h2-titles{\r\n    \r\n    margin-bottom: 4%;\r\n    border-bottom: 0.5px rgba(128, 128, 128, 0.21) solid;\r\n    \r\n}\r\n\r\nh3{    \r\n    color: rgba(0, 0, 0, 0.44);\r\n    margin-left: 2%;\r\n    \r\n}\r\n\r\n.repoEx-logo{\r\n  background-image: url(/pentaho/content/repoEX/dashboards/resources/img/logoFull.png);\r\n   background-size:contain;\r\n   background-repeat: no-repeat;\r\n}\r\n.row.no-gutter {\r\n  margin-left: 0;\r\n  margin-right: 0;\r\n}\r\n\r\n.row.no-gutter [class*='col-']:not(:first-child),\r\n.row.no-gutter [class*='col-']:not(:last-child) {\r\n  padding-right: 0;\r\n  padding-left: 0;\r\n}\r\n\r\n.ipPortBox {\r\n    margin-bottom: 3%;\r\n}\r\n\r\n\r\n.dbSel-box{\r\n    \r\n    margin-bottom: 3%;    \r\n}\r\n\r\n.radioBox{\r\n    height: 80px;\r\n    margin-top: 2%;\r\n}\r\n\r\n\r\n.divIpBox{\r\n    padding-right: 0px;\r\n}\r\n\r\n.divPortBox{\r\n    padding-left: 0px;\r\n}\r\n\r\n.ipBox{    \r\n    border: solid green 1px;\r\n    border-radius: 10px;\r\n    border-right: 0px;\r\n    border-top-right-radius: 0px;\r\n    border-bottom-right-radius: 0px;    \r\n} \r\n\r\n.portBox{\r\n    \r\n    height:100px;\r\n    border: 1px green solid;\r\n    border-radius: 10px;\r\n    border-left: none;\r\n    border-bottom-left-radius: 0px;\r\n    border-top-left-radius: 0px;\r\n    \r\n}\r\n\r\n\r\n/*\r\n* -- Radio Style --\r\n*/\r\n\r\n.db-sel-rd {\r\n  list-style: none;\r\n  margin: 0;\r\n  padding: 0;\r\n}\r\n\r\n.db-sel-rd:after {\r\n  content: \"\";\r\n  clear: both;\r\n}\r\n\r\n.db-sel-rd {\r\n  border: 1px solid #ccc;\r\n  box-sizing: border-box;\r\n  float: left;\r\n  height: 70px;\r\n  position: relative;\r\n  width: 120px;\r\n  display: -webkit-box;\r\n}\r\n\r\n.db-sel-rd + .db-sel-rd{\r\n  margin-left: 25px;\r\n}\r\n\r\n.db-sel-rd label {\r\n  background: #fff no-repeat center center;\r\n  bottom: 1px;\r\n  cursor: pointer;\r\n  display: block;\r\n  font-size: 0;\r\n  left: 1px;\r\n  position: absolute;\r\n  right: 1px;\r\n  text-indent: 100%;\r\n  top: 1px;\r\n  white-space: nowrap;\r\n}\r\n\r\n.pgsql label {\r\n  background-image: url(/pentaho/content/repoEX/dashboards/resources/img/postgresql.png);\r\n   background-size:contain;\r\n}\r\n\r\n.mysql label {\r\n  background-image: url(/pentaho/content/repoEX/dashboards/resources/img/mysql.png);\r\n   background-size:contain;\r\n}\r\n\r\n.ora label {\r\n  background-image: url(/pentaho/content/repoEX/dashboards/resources/img/oradb.png);\r\n   background-size:contain;\r\n}\r\n\r\n.mssql label {\r\n  background-image: url(/pentaho/content/repoEX/dashboards/resources/img/mssql.png);\r\n   background-size:contain;\r\n}\r\n\r\n.db-sel-rd input:focus + label {\r\n  outline: 2px dotted #88C425;\r\n}\r\n\r\n.db-sel-rd input:checked + label {\r\n  outline: 4px solid #88C425;\r\n  margin: 0px;\r\n}\r\n\r\n.db-sel-rd input:checked + label:after {\r\n  background: url(/pentaho/content/repoEX/dashboards/resources/img/checked.svg);\r\n  background-size:contain;\r\n  background-color:#88C425;\r\n  bottom: -4px;\r\n  content: \"\";\r\n  display: inline-block;\r\n  height: 20px;\r\n  position: absolute;\r\n  right: -4px;\r\n  width: 20px;\r\n} \r\n\r\n@-moz-document url-prefix() {\r\n  .db-sel-rd input:checked + label:after {\r\n    bottom: 0;\r\n    right: 0;\r\n    background-color: #88C425;\r\n  }\r\n}\r\n\r\n\r\n\r\n/*\r\n* -- Checkbox Style --\r\n*/\r\n    .btn-info {\r\n    color: #fff;\r\n    background-color: #88C425;\r\n    border-color: #88C425;\r\n    }\r\n    \r\n    .btn-info:hover, .btn-info:focus, \r\n    .btn-info:active, .btn-info.active, \r\n    .open .dropdown-toggle.btn-info {\r\n    color: #fff;\r\n    background-color: #88C425;\r\n    border-color: #88C425;\r\n    }\r\n\r\n    .form-group input[type=\"checkbox\"] {\r\n    display: none;\r\n    }\r\n    \r\n    .form-group input[type=\"checkbox\"] + .btn-group > label span {\r\n        width: 20px;\r\n    }\r\n    \r\n    .form-group input[type=\"checkbox\"] + .btn-group > label span:first-child {\r\n        display: none;\r\n    }\r\n    .form-group input[type=\"checkbox\"] + .btn-group > label span:last-child {\r\n        display: inline-block;   \r\n    }\r\n    \r\n    .form-group input[type=\"checkbox\"]:checked + .btn-group > label span:first-child {\r\n        display: inline-block;\r\n    }\r\n    .form-group input[type=\"checkbox\"]:checked + .btn-group > label span:last-child {\r\n        display: none;   \r\n    } \r\n\r\n/*\r\n* -- Form Style --\r\n*/\r\n.form-control:focus {\r\n    border-color: #88C425;\r\n}\r\n\r\n.btn-finish {\r\n    display: inline-block;\r\n    padding: 6px 12px;\r\n    margin-bottom: 0;\r\n    font-size: 14px;\r\n    font-weight: normal;\r\n    line-height: 1.42857143;\r\n    text-align: center;\r\n    white-space: nowrap;\r\n    vertical-align: middle;\r\n    cursor: pointer;\r\n    -webkit-user-select: none;\r\n    -moz-user-select: none;\r\n    -ms-user-select: none;\r\n    user-select: none;\r\n    background-image: none;\r\n    border: 1px solid rgb(136, 196, 37);\r\n    border-radius: 4px;\r\n}\r\n\r\na {\r\n    color: #fff;\r\n    text-decoration: none;\r\n}\r\n\r\na {\r\n    background: #88c425;\r\n}\r\n\r\na:focus {\r\n    outline: thin dotted;\r\n    outline: 5px auto white;\r\n    outline-color: white;\r\n    outline-style: auto;\r\n    outline-width: 5px;\r\n    outline-offset: -2px;\r\n}\r\n\r\n\r\na:hover, a:focus {\r\n    color: #FFF;\r\n    text-decoration: none;\r\n}\r\n\r\n\r\n.quartzBoxEnd {\r\n    margin-bottom: 3%;\r\n} "
      },
      {
       "name": "resourceType",
@@ -175,7 +175,7 @@
      {
       "name": "height",
       "type": "Integer",
-      "value": "75"
+      "value": ""
      },
      {
       "name": "backgroundColor",
@@ -203,66 +203,66 @@
    },
    {
     "id": "9c7ac28f-ad1b-d07a-9da0-8edcdd49c700",
-    "type": "LayoutBootstrapColumn",
-    "typeDesc": "Column",
     "parent": "8b81e267-15bd-b160-65d5-8be6f9f1cd6d",
     "properties": [
      {
       "name": "name",
-      "value": "leftH",
-      "type": "Id"
+      "type": "Id",
+      "value": "leftH"
      },
      {
       "name": "bootstrapExtraSmall",
-      "value": "2",
-      "type": "String"
+      "type": "String",
+      "value": "2"
      },
      {
       "name": "bootstrapSmall",
-      "value": "",
-      "type": "String"
+      "type": "String",
+      "value": ""
      },
      {
       "name": "bootstrapMedium",
-      "value": "",
-      "type": "String"
+      "type": "String",
+      "value": ""
      },
      {
       "name": "bootstrapLarge",
-      "value": "",
-      "type": "String"
+      "type": "String",
+      "value": ""
      },
      {
       "name": "bootstrapCssClass",
-      "value": "",
-      "type": "String"
+      "type": "String",
+      "value": ""
      },
      {
       "name": "height",
-      "value": "75",
-      "type": "Integer"
+      "type": "Integer",
+      "value": "110"
      },
      {
       "name": "backgroundColor",
-      "value": "#d1d1d1",
-      "type": "Color"
+      "type": "Color",
+      "value": "#d1d1d1"
      },
      {
       "name": "roundCorners",
-      "value": "",
-      "type": "RoundCorners"
+      "type": "RoundCorners",
+      "value": ""
      },
      {
       "name": "textAlign",
-      "value": "",
-      "type": "TextAlign"
+      "type": "TextAlign",
+      "value": ""
      },
      {
       "name": "cssClass",
-      "value": "",
-      "type": "String"
+      "type": "String",
+      "value": ""
      }
-    ]
+    ],
+    "type": "LayoutBootstrapColumn",
+    "typeDesc": "Column"
    },
    {
     "id": "46c17f79-60bc-4956-f5ef-7eb7ec287c40",
@@ -301,7 +301,7 @@
      {
       "name": "height",
       "type": "Integer",
-      "value": "75"
+      "value": "110"
      },
      {
       "name": "backgroundColor",
@@ -339,7 +339,7 @@
      {
       "name": "html",
       "type": "Html",
-      "value": "<script src=\"/pentaho/content/repoEX/dashboards/resources/js/jquery-1.10.2.js\"></script>\n<script src=\"/pentaho/content/repoEX/dashboards/resources/js/myFormValidator.js\"></script>\n<script language=\"javascript\" type=\"text/javascript\" src=\"/pentaho/plugin/pentaho-cdf-dd/api/renderer/cde-embed.js\"></script>\n\n\n\n\n\n<script>\n\nfunction containerFluid( jQuery ) {\n    // Code to run when the document is ready.\n    //\n\n    $(\".container\").addClass(\"container-fluid\")\n    $(\".container-fluid\").removeClass(\"container\")\n}\n$(document).ready($(\"title\")[0].innerHTML=\"Repo.Ex\") \n$( document ).ready( containerFluid );\n\n// or:\n//$( window ).on( \"load\", readyFn );\n\n</script>\n "
+      "value": "<script src=\"/pentaho/content/repoEX/dashboards/resources/js/jquery-1.10.2.js\"></script>\n<script src=\"/pentaho/content/repoEX/dashboards/resources/js/myFormValidator.js\"></script>\n<script language=\"javascript\" type=\"text/javascript\" src=\"/pentaho/plugin/pentaho-cdf-dd/api/renderer/cde-embed.js\"></script>\n\n<script>\n\nfunction containerFluid( jQuery ) {\n    // Code to add class \"container-fluir\" when the document is ready.\n    $(\".container\").addClass(\"container-fluid\")\n    $(\".container-fluid\").removeClass(\"container\")\n}\n$(document).ready($(\"title\")[0].innerHTML=\"Repo.Ex\") \n$(document).ready( containerFluid );\n\n// or:\n//$( window ).on( \"load\", readyFn );\n\n</script>\n "
      },
      {
       "name": "fontSize",
@@ -361,19 +361,57 @@
     "typeDesc": "Html"
    },
    {
-    "id": "59c6d3f0-1af4-a5bc-881d-9d11366b8465",
-    "type": "LayoutBootstrapColumn",
-    "typeDesc": "Column",
-    "parent": "8b81e267-15bd-b160-65d5-8be6f9f1cd6d",
+    "id": "bcd74620-15ae-af56-b90c-fc2993f44732",
+    "type": "LayoutRow",
+    "typeDesc": "Row",
+    "parent": "46c17f79-60bc-4956-f5ef-7eb7ec287c40",
     "properties": [
      {
       "name": "name",
-      "value": "rightH",
+      "value": "mylogo",
+      "type": "Id"
+     },
+     {
+      "name": "height",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "backgroundColor",
+      "value": "",
+      "type": "Color"
+     },
+     {
+      "name": "roundCorners",
+      "value": "",
+      "type": "RoundCorners"
+     },
+     {
+      "name": "textAlign",
+      "value": "",
+      "type": "TextAlign"
+     },
+     {
+      "name": "cssClass",
+      "value": "",
+      "type": "String"
+     }
+    ]
+   },
+   {
+    "id": "33b14fb0-ab8e-b6f7-9a59-a9847d17c685",
+    "type": "LayoutBootstrapColumn",
+    "typeDesc": "Column",
+    "parent": "bcd74620-15ae-af56-b90c-fc2993f44732",
+    "properties": [
+     {
+      "name": "name",
+      "value": "myLogoLeftDummy",
       "type": "Id"
      },
      {
       "name": "bootstrapExtraSmall",
-      "value": "2",
+      "value": "3",
       "type": "String"
      },
      {
@@ -398,12 +436,12 @@
      },
      {
       "name": "height",
-      "value": "75",
+      "value": "110",
       "type": "Integer"
      },
      {
       "name": "backgroundColor",
-      "value": "#d1d1d1",
+      "value": "",
       "type": "Color"
      },
      {
@@ -422,6 +460,195 @@
       "type": "String"
      }
     ]
+   },
+   {
+    "id": "70577194-458b-6445-9455-fc904559c020",
+    "type": "LayoutBootstrapColumn",
+    "typeDesc": "Column",
+    "parent": "bcd74620-15ae-af56-b90c-fc2993f44732",
+    "properties": [
+     {
+      "name": "name",
+      "value": "myLogoWrapper",
+      "type": "Id"
+     },
+     {
+      "name": "bootstrapExtraSmall",
+      "value": "6",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapSmall",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapMedium",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapLarge",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapCssClass",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "height",
+      "value": "110",
+      "type": "Integer"
+     },
+     {
+      "name": "backgroundColor",
+      "value": "",
+      "type": "Color"
+     },
+     {
+      "name": "roundCorners",
+      "value": "",
+      "type": "RoundCorners"
+     },
+     {
+      "name": "textAlign",
+      "value": "",
+      "type": "TextAlign"
+     },
+     {
+      "name": "cssClass",
+      "value": "repoEx-logo",
+      "type": "String"
+     }
+    ]
+   },
+   {
+    "id": "7fb5eec9-3e74-df8c-c262-671beb80727b",
+    "type": "LayoutBootstrapColumn",
+    "typeDesc": "Column",
+    "parent": "bcd74620-15ae-af56-b90c-fc2993f44732",
+    "properties": [
+     {
+      "name": "name",
+      "value": "myLogoRightDummy",
+      "type": "Id"
+     },
+     {
+      "name": "bootstrapExtraSmall",
+      "value": "3",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapSmall",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapMedium",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapLarge",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapCssClass",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "height",
+      "value": "110",
+      "type": "Integer"
+     },
+     {
+      "name": "backgroundColor",
+      "value": "",
+      "type": "Color"
+     },
+     {
+      "name": "roundCorners",
+      "value": "",
+      "type": "RoundCorners"
+     },
+     {
+      "name": "textAlign",
+      "value": "",
+      "type": "TextAlign"
+     },
+     {
+      "name": "cssClass",
+      "value": "",
+      "type": "String"
+     }
+    ]
+   },
+   {
+    "id": "59c6d3f0-1af4-a5bc-881d-9d11366b8465",
+    "parent": "8b81e267-15bd-b160-65d5-8be6f9f1cd6d",
+    "properties": [
+     {
+      "name": "name",
+      "type": "Id",
+      "value": "rightH"
+     },
+     {
+      "name": "bootstrapExtraSmall",
+      "type": "String",
+      "value": "2"
+     },
+     {
+      "name": "bootstrapSmall",
+      "type": "String",
+      "value": ""
+     },
+     {
+      "name": "bootstrapMedium",
+      "type": "String",
+      "value": ""
+     },
+     {
+      "name": "bootstrapLarge",
+      "type": "String",
+      "value": ""
+     },
+     {
+      "name": "bootstrapCssClass",
+      "type": "String",
+      "value": ""
+     },
+     {
+      "name": "height",
+      "type": "Integer",
+      "value": "110"
+     },
+     {
+      "name": "backgroundColor",
+      "type": "Color",
+      "value": "#d1d1d1"
+     },
+     {
+      "name": "roundCorners",
+      "type": "RoundCorners",
+      "value": ""
+     },
+     {
+      "name": "textAlign",
+      "type": "TextAlign",
+      "value": ""
+     },
+     {
+      "name": "cssClass",
+      "type": "String",
+      "value": ""
+     }
+    ],
+    "type": "LayoutBootstrapColumn",
+    "typeDesc": "Column"
    },
    {
     "id": "b7e4eb3e-6cf8-b7bb-12a4-3a19addc1ba4",
@@ -700,7 +927,7 @@
      {
       "name": "html",
       "type": "Html",
-      "value": "<h2>1- Selecione o Banco</h2>\n\n<!-- Multiple Radios (inline) -->     \n<ul class=\"db-sel-rd\">\n\n  <li class=\"db-sel-rd pgsql\">\n      <input type=\"radio\" name=\"dbSel\" id=\"dbSel-0\" value=\"PostgreSQL\" style=\"margin: 10px;\" checked=\"checked\" >\n      <label for=\"dbSel-0\">PostgreSQL</label>             \n  </li>\n\n  <li class=\"db-sel-rd mysql\">\n    <input type=\"radio\" name=\"dbSel\" id=\"dbSel-1\" value=\"MySQL\" style=\"margin: 10px;\">\n    <label for=\"dbSel-1\">MySQL</label>             \n  </li>\n\n  <li class=\"db-sel-rd ora\">\n    <input type=\"radio\" name=\"dbSel\" id=\"dbSel-2\" value=\"Oracle DB 10/11/12\" style=\"margin: 10px;\">\n    <label for=\"dbSel-2\">Oracle DB</label>\n  </li>\n\n  <li class=\"db-sel-rd mssql\">\n    <input type=\"radio\" name=\"dbSel\" id=\"dbSel-3\" value=\"Microsoft SQL Server\" style=\"margin: 10px;\">\n    <label for=\"dbSel-3\">SQL Server</label>\n  </li>\n\n</ul>\n    \n  \n\n   \n  <script>\n\n  console.log(\"----Function Start----\")\n  $( \"input\" ).on( \"click\", function() {\n      \n      console.log(\"----Into the Function----\")      \n      dbSel_out = $( \"input:checked\" ).val() + \" is checked!\";      \n      dbSel = $( \"input:checked\" ).val();\n      \n      if (dbSel == \"PostgreSQL\"){\n          $(portText)[0].placeholder = 5432\n      }else if (dbSel == \"MySQL\"){\n          $(portText)[0].placeholder = 3306\n      }else if (dbSel == \"Oracle DB 10/11/12\"){\n          $(portText)[0].placeholder = 1521\n      }else if (dbSel == \"Microsoft SQL Server\"){\n          $(portText)[0].placeholder = 1433\n      }\n      \n    console.log(dbSel + \" \" + $(portText)[0].placeholder );\n  }); \n\n  /*$(document).ready(function () {\n    //your code here\n\n      function click (){\n\n        console.log(\"----Into the Function----\")\n        answer = $( \"input:checked\" ).val() + \" is checked!\";\n        alert(answer);\n    }\n\n  });*/\n   </script> "
+      "value": "<h2 class=\"h2-titles\">1- Selecione o Banco</h2>\n\n<div class=\"col-xs-2\"></div>\n\n<!-- Multiple Radios (inline) -->   \n\n<div class=\"col-xs-8\">\n<ul class=\"db-sel-rd\">\n\n  <li class=\"db-sel-rd pgsql\">\n      <input type=\"radio\" name=\"dbSel\" id=\"dbSel-0\" value=\"PostgreSQL\" style=\"margin: 10px;\" checked=\"checked\" >\n      <label for=\"dbSel-0\">PostgreSQL</label>             \n  </li>\n\n  <li class=\"db-sel-rd mysql\">\n    <input type=\"radio\" name=\"dbSel\" id=\"dbSel-1\" value=\"MySQL\" style=\"margin: 10px;\">\n    <label for=\"dbSel-1\">MySQL</label>             \n  </li>\n\n  <li class=\"db-sel-rd ora\">\n    <input type=\"radio\" name=\"dbSel\" id=\"dbSel-2\" value=\"Oracle DB 10/11/12\" style=\"margin: 10px;\">\n    <label for=\"dbSel-2\">Oracle DB</label>\n  </li>\n\n  <li class=\"db-sel-rd mssql\">\n    <input type=\"radio\" name=\"dbSel\" id=\"dbSel-3\" value=\"Microsoft SQL Server\" style=\"margin: 10px;\">\n    <label for=\"dbSel-3\">SQL Server</label>\n  </li>\n\n</ul>\n    \n  \n\n   \n  <script>\n\n  console.log(\"----Function Start----\")\n  $( \"input\" ).on( \"click\", function() {\n      \n      console.log(\"----Into the Function----\")      \n      dbSel_out = $( \"input:checked\" ).val() + \" is checked!\";      \n      dbSel = $( \"input:checked\" ).val();\n      \n      if (dbSel == \"PostgreSQL\"){\n          $(portText)[0].placeholder = 5432\n      }else if (dbSel == \"MySQL\"){\n          $(portText)[0].placeholder = 3306\n      }else if (dbSel == \"Oracle DB 10/11/12\"){\n          $(portText)[0].placeholder = 1521\n      }else if (dbSel == \"Microsoft SQL Server\"){\n          $(portText)[0].placeholder = 1433\n      }\n      \n    console.log(dbSel + \" \" + $(portText)[0].placeholder );\n  }); \n\n  /*$(document).ready(function () {\n    //your code here\n\n      function click (){\n\n        console.log(\"----Into the Function----\")\n        answer = $( \"input:checked\" ).val() + \" is checked!\";\n        alert(answer);\n    }\n\n  });*/\n   </script> \n   \n   </div>\n   \n   \n   <div class=\"col-xs-2\"></div> "
      },
      {
       "name": "fontSize",
@@ -733,7 +960,7 @@
      {
       "name": "height",
       "type": "Integer",
-      "value": "50"
+      "value": ""
      },
      {
       "name": "backgroundColor",
@@ -796,7 +1023,7 @@
      {
       "name": "height",
       "type": "Integer",
-      "value": "50"
+      "value": "30"
      },
      {
       "name": "backgroundColor",
@@ -816,7 +1043,7 @@
      {
       "name": "cssClass",
       "type": "String",
-      "value": ""
+      "value": "dbSel-box"
      }
     ],
     "type": "LayoutBootstrapColumn",
@@ -834,7 +1061,7 @@
      {
       "name": "html",
       "type": "Html",
-      "value": "\r\n<div class=\"[ form-group ]\" style=\"margin-top: 3%;margin-bottom: 3%;\">\r\n    <input type=\"checkbox\" name=\"jdbcCheck\" id=\"jdbcCheck-0\" autocomplete=\"off\" />\r\n    <div class=\"[ btn-group ]\">\r\n        <label for=\"jdbcCheck-0\" class=\"[ btn btn-info ]\">\r\n            <span class=\"[ glyphicon glyphicon-ok ]\"></span>\r\n            <span> </span>\r\n        </label>\r\n        <label for=\"jdbcCheck-0\" class=\"[ btn btn-default active ]\">\r\n            Instalar o JDBC?\r\n        </label>\r\n    </div>\r\n</div>\r\n "
+      "value": "\r\n<div class=\"[ form-group ]\" style=\"margin-top: 3%;margin-bottom: 2%;\">\r\n    <input type=\"checkbox\" name=\"jdbcCheck\" id=\"jdbcCheck-0\" autocomplete=\"off\" />\r\n    <div class=\"[ btn-group ]\">\r\n        <label for=\"jdbcCheck-0\" class=\"[ btn btn-info ]\">\r\n            <span class=\"[ glyphicon glyphicon-ok ]\"></span>\r\n            <span> </span>\r\n        </label>\r\n        <label for=\"jdbcCheck-0\" class=\"[ btn btn-default active ]\">\r\n            Instalar o JDBC?\r\n        </label>\r\n    </div>\r\n</div>\r\n "
      },
      {
       "name": "fontSize",
@@ -856,6 +1083,140 @@
     "typeDesc": "Html"
    },
    {
+    "id": "88d406f8-40b7-badc-ab77-95438ca8293e",
+    "type": "LayoutRow",
+    "typeDesc": "Row",
+    "parent": "02d25dd4-8fc4-4b05-7ca4-2a64acf89b31",
+    "properties": [
+     {
+      "name": "name",
+      "value": "ipPortTitle",
+      "type": "Id"
+     },
+     {
+      "name": "height",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "backgroundColor",
+      "value": "",
+      "type": "Color"
+     },
+     {
+      "name": "roundCorners",
+      "value": "",
+      "type": "RoundCorners"
+     },
+     {
+      "name": "textAlign",
+      "value": "",
+      "type": "TextAlign"
+     },
+     {
+      "name": "cssClass",
+      "value": "",
+      "type": "String"
+     }
+    ]
+   },
+   {
+    "id": "af0b8760-8f5b-e1ef-1b12-9a9d449fd9bb",
+    "type": "LayoutBootstrapColumn",
+    "typeDesc": "Column",
+    "parent": "88d406f8-40b7-badc-ab77-95438ca8293e",
+    "properties": [
+     {
+      "name": "name",
+      "value": "",
+      "type": "Id"
+     },
+     {
+      "name": "bootstrapExtraSmall",
+      "value": "12",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapSmall",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapMedium",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapLarge",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "bootstrapCssClass",
+      "value": "",
+      "type": "String"
+     },
+     {
+      "name": "height",
+      "value": "40",
+      "type": "Integer"
+     },
+     {
+      "name": "backgroundColor",
+      "value": "",
+      "type": "Color"
+     },
+     {
+      "name": "roundCorners",
+      "value": "",
+      "type": "RoundCorners"
+     },
+     {
+      "name": "textAlign",
+      "value": "",
+      "type": "TextAlign"
+     },
+     {
+      "name": "cssClass",
+      "value": "",
+      "type": "String"
+     }
+    ]
+   },
+   {
+    "id": "3b9b4327-929f-75bd-1e69-d945df1055ca",
+    "type": "LayoutHtml",
+    "typeDesc": "Html",
+    "parent": "af0b8760-8f5b-e1ef-1b12-9a9d449fd9bb",
+    "properties": [
+     {
+      "name": "name",
+      "value": "",
+      "type": "Id"
+     },
+     {
+      "name": "html",
+      "value": "<h2 class=\"h2-titles\">2- Digite seu IP e Porta</h2> ",
+      "type": "Html"
+     },
+     {
+      "name": "fontSize",
+      "value": "",
+      "type": "Integer"
+     },
+     {
+      "name": "color",
+      "value": "",
+      "type": "Color"
+     },
+     {
+      "name": "cssClass",
+      "value": "",
+      "type": "String"
+     }
+    ]
+   },
+   {
     "id": "1ea3d63a-2a4f-2385-b767-9289c74e22f6",
     "parent": "02d25dd4-8fc4-4b05-7ca4-2a64acf89b31",
     "properties": [
@@ -867,7 +1228,7 @@
      {
       "name": "height",
       "type": "Integer",
-      "value": "100"
+      "value": ""
      },
      {
       "name": "backgroundColor",
@@ -887,7 +1248,7 @@
      {
       "name": "cssClass",
       "type": "String",
-      "value": "no-gutter"
+      "value": "no-gutter ipPortBox"
      }
     ],
     "type": "LayoutRow",
@@ -930,7 +1291,7 @@
      {
       "name": "height",
       "type": "Integer",
-      "value": "100"
+      "value": "60"
      },
      {
       "name": "backgroundColor",
@@ -950,7 +1311,7 @@
      {
       "name": "cssClass",
       "type": "String",
-      "value": "ipBox divIpBox"
+      "value": ""
      }
     ],
     "type": "LayoutBootstrapColumn",
@@ -968,7 +1329,7 @@
      {
       "name": "html",
       "type": "Html",
-      "value": "<form class=\"form-horizontal\" style=\"margin-left: 5%; margin-top: 2%;\">\r\n<fieldset>\r\n\r\n<!-- Text input-->\r\n<div class=\"form-group\">\r\n  <label class=\"col-md-12\" for=\"ipText\">IP Adress</label>  \r\n  <div class=\"col-md-7\">\r\n  <input id=\"ipText\" name=\"ipText\" type=\"text\" placeholder=\"127.0.0.1\" class=\"form-control input-md\" required=\"\">\r\n    \r\n  </div>\r\n</div>\r\n\r\n</fieldset>\r\n</form> \r\n\r\n<script>\r\n\r\n    function ValidateIPaddress(ipaddress)   \r\n{  \r\n if (/^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/.test(myForm.emailAddr.value))  \r\n  {  \r\n    return (true)  \r\n  }  \r\nalert(\"You have entered an invalid IP address!\")  \r\nreturn (false)  \r\n}  \r\n\r\n</script> "
+      "value": "<form class=\"form-horizontal\" style=\"margin-left: 5%; margin-top: 2%;\">\r\n<fieldset>\r\n\r\n<!-- Text input-->\r\n<div class=\"form-group\">\r\n  <label class=\"col-md-12\" for=\"ipText\">IP Adress</label>  \r\n  <div class=\"col-md-7\">\r\n  <input id=\"ipText\" name=\"ipText\" type=\"text\" placeholder=\"127.0.0.1\" class=\"form-control input-md\" required=\"\">\r\n    \r\n  </div>\r\n</div>\r\n\r\n</fieldset>\r\n</form> \r\n\r\n<script>\r\n\r\nfunction ValidateIPaddress(ipaddress){  \r\n if (/^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/.test(myForm.emailAddr.value)){  \r\n    return (true)  \r\n  }  \r\nalert(\"You have entered an invalid IP address!\")  \r\nreturn (false)  \r\n}  \r\n\r\n</script> "
      },
      {
       "name": "fontSize",
@@ -1026,7 +1387,7 @@
      {
       "name": "height",
       "type": "Integer",
-      "value": "100"
+      "value": "60"
      },
      {
       "name": "backgroundColor",
@@ -1046,7 +1407,7 @@
      {
       "name": "cssClass",
       "type": "String",
-      "value": "portBox divPortBox"
+      "value": ""
      }
     ],
     "type": "LayoutBootstrapColumn",
@@ -1086,14 +1447,14 @@
     "typeDesc": "Html"
    },
    {
-    "id": "4ec14d73-ed4b-529e-28e9-d22dad5dc4d3",
+    "id": "ea441e67-e075-349b-747e-c7c3e086f56a",
     "type": "LayoutRow",
     "typeDesc": "Row",
     "parent": "02d25dd4-8fc4-4b05-7ca4-2a64acf89b31",
     "properties": [
      {
       "name": "name",
-      "value": "hibTitle",
+      "value": "ipPortTitle_new",
       "type": "Id"
      },
      {
@@ -1124,10 +1485,10 @@
     ]
    },
    {
-    "id": "62debd73-2992-08a1-ce67-e457a3504f48",
+    "id": "2e91f004-b1e6-7471-88cf-527f59671c5a",
     "type": "LayoutBootstrapColumn",
     "typeDesc": "Column",
-    "parent": "4ec14d73-ed4b-529e-28e9-d22dad5dc4d3",
+    "parent": "ea441e67-e075-349b-747e-c7c3e086f56a",
     "properties": [
      {
       "name": "name",
@@ -1161,7 +1522,7 @@
      },
      {
       "name": "height",
-      "value": "30",
+      "value": "40",
       "type": "Integer"
      },
      {
@@ -1187,10 +1548,10 @@
     ]
    },
    {
-    "id": "ec6b99c7-eeb4-0782-d476-516ad47b1a75",
+    "id": "3aa174fb-253f-0b0e-80ac-b344bac5ddec",
     "type": "LayoutHtml",
     "typeDesc": "Html",
-    "parent": "62debd73-2992-08a1-ce67-e457a3504f48",
+    "parent": "2e91f004-b1e6-7471-88cf-527f59671c5a",
     "properties": [
      {
       "name": "name",
@@ -1199,7 +1560,7 @@
      },
      {
       "name": "html",
-      "value": "<h2>Hibernate</h2> ",
+      "value": "<h2 class=\"h2-titles\">3- Configurando o Banco</h2> ",
       "type": "Html"
      },
      {
@@ -1218,6 +1579,140 @@
       "type": "String"
      }
     ]
+   },
+   {
+    "id": "4ec14d73-ed4b-529e-28e9-d22dad5dc4d3",
+    "parent": "02d25dd4-8fc4-4b05-7ca4-2a64acf89b31",
+    "properties": [
+     {
+      "name": "name",
+      "type": "Id",
+      "value": "hibTitle"
+     },
+     {
+      "name": "height",
+      "type": "Integer",
+      "value": ""
+     },
+     {
+      "name": "backgroundColor",
+      "type": "Color",
+      "value": ""
+     },
+     {
+      "name": "roundCorners",
+      "type": "RoundCorners",
+      "value": ""
+     },
+     {
+      "name": "textAlign",
+      "type": "TextAlign",
+      "value": ""
+     },
+     {
+      "name": "cssClass",
+      "type": "String",
+      "value": ""
+     }
+    ],
+    "type": "LayoutRow",
+    "typeDesc": "Row"
+   },
+   {
+    "id": "62debd73-2992-08a1-ce67-e457a3504f48",
+    "parent": "4ec14d73-ed4b-529e-28e9-d22dad5dc4d3",
+    "properties": [
+     {
+      "name": "name",
+      "type": "Id",
+      "value": ""
+     },
+     {
+      "name": "bootstrapExtraSmall",
+      "type": "String",
+      "value": "12"
+     },
+     {
+      "name": "bootstrapSmall",
+      "type": "String",
+      "value": ""
+     },
+     {
+      "name": "bootstrapMedium",
+      "type": "String",
+      "value": ""
+     },
+     {
+      "name": "bootstrapLarge",
+      "type": "String",
+      "value": ""
+     },
+     {
+      "name": "bootstrapCssClass",
+      "type": "String",
+      "value": ""
+     },
+     {
+      "name": "height",
+      "type": "Integer",
+      "value": "25"
+     },
+     {
+      "name": "backgroundColor",
+      "type": "Color",
+      "value": ""
+     },
+     {
+      "name": "roundCorners",
+      "type": "RoundCorners",
+      "value": ""
+     },
+     {
+      "name": "textAlign",
+      "type": "TextAlign",
+      "value": ""
+     },
+     {
+      "name": "cssClass",
+      "type": "String",
+      "value": ""
+     }
+    ],
+    "type": "LayoutBootstrapColumn",
+    "typeDesc": "Column"
+   },
+   {
+    "id": "ec6b99c7-eeb4-0782-d476-516ad47b1a75",
+    "parent": "62debd73-2992-08a1-ce67-e457a3504f48",
+    "properties": [
+     {
+      "name": "name",
+      "type": "Id",
+      "value": ""
+     },
+     {
+      "name": "html",
+      "type": "Html",
+      "value": "<h3>Hibernate</h3> "
+     },
+     {
+      "name": "fontSize",
+      "type": "Integer",
+      "value": ""
+     },
+     {
+      "name": "color",
+      "type": "Color",
+      "value": ""
+     },
+     {
+      "name": "cssClass",
+      "type": "String",
+      "value": ""
+     }
+    ],
+    "type": "LayoutHtml",
+    "typeDesc": "Html"
    },
    {
     "id": "727ae116-6c50-08cb-9517-c05d65e6db6f",
@@ -1438,7 +1933,7 @@
      {
       "name": "color",
       "type": "Color",
-      "value": "#d1d1d1"
+      "value": ""
      },
      {
       "name": "cssClass",
@@ -1547,137 +2042,137 @@
    },
    {
     "id": "8b17d7a4-9932-c771-11d0-534c51beafe9",
-    "type": "LayoutRow",
-    "typeDesc": "Row",
     "parent": "02d25dd4-8fc4-4b05-7ca4-2a64acf89b31",
     "properties": [
      {
       "name": "name",
-      "value": "jackTitle",
-      "type": "Id"
+      "type": "Id",
+      "value": "jackTitle"
      },
      {
       "name": "height",
-      "value": "",
-      "type": "Integer"
+      "type": "Integer",
+      "value": ""
      },
      {
       "name": "backgroundColor",
-      "value": "",
-      "type": "Color"
+      "type": "Color",
+      "value": ""
      },
      {
       "name": "roundCorners",
-      "value": "",
-      "type": "RoundCorners"
+      "type": "RoundCorners",
+      "value": ""
      },
      {
       "name": "textAlign",
-      "value": "",
-      "type": "TextAlign"
+      "type": "TextAlign",
+      "value": ""
      },
      {
       "name": "cssClass",
-      "value": "",
-      "type": "String"
+      "type": "String",
+      "value": ""
      }
-    ]
+    ],
+    "type": "LayoutRow",
+    "typeDesc": "Row"
    },
    {
     "id": "5ab4352f-6dc8-47bc-25b4-a7af5732f37a",
-    "type": "LayoutBootstrapColumn",
-    "typeDesc": "Column",
     "parent": "8b17d7a4-9932-c771-11d0-534c51beafe9",
     "properties": [
      {
       "name": "name",
-      "value": "",
-      "type": "Id"
+      "type": "Id",
+      "value": ""
      },
      {
       "name": "bootstrapExtraSmall",
-      "value": "12",
-      "type": "String"
+      "type": "String",
+      "value": "12"
      },
      {
       "name": "bootstrapSmall",
-      "value": "",
-      "type": "String"
+      "type": "String",
+      "value": ""
      },
      {
       "name": "bootstrapMedium",
-      "value": "",
-      "type": "String"
+      "type": "String",
+      "value": ""
      },
      {
       "name": "bootstrapLarge",
-      "value": "",
-      "type": "String"
+      "type": "String",
+      "value": ""
      },
      {
       "name": "bootstrapCssClass",
-      "value": "",
-      "type": "String"
+      "type": "String",
+      "value": ""
      },
      {
       "name": "height",
-      "value": "30",
-      "type": "Integer"
+      "type": "Integer",
+      "value": "25"
      },
      {
       "name": "backgroundColor",
-      "value": "",
-      "type": "Color"
+      "type": "Color",
+      "value": ""
      },
      {
       "name": "roundCorners",
-      "value": "",
-      "type": "RoundCorners"
+      "type": "RoundCorners",
+      "value": ""
      },
      {
       "name": "textAlign",
-      "value": "",
-      "type": "TextAlign"
+      "type": "TextAlign",
+      "value": ""
      },
      {
       "name": "cssClass",
-      "value": "",
-      "type": "String"
+      "type": "String",
+      "value": ""
      }
-    ]
+    ],
+    "type": "LayoutBootstrapColumn",
+    "typeDesc": "Column"
    },
    {
     "id": "8fa7e389-8997-5942-3d65-8df1e5f924b5",
-    "type": "LayoutHtml",
-    "typeDesc": "Html",
     "parent": "5ab4352f-6dc8-47bc-25b4-a7af5732f37a",
     "properties": [
      {
       "name": "name",
-      "value": "",
-      "type": "Id"
+      "type": "Id",
+      "value": ""
      },
      {
       "name": "html",
-      "value": "<h2>Jackrabbit</h2> ",
-      "type": "Html"
+      "type": "Html",
+      "value": "<h3>Jackrabbit</h3> "
      },
      {
       "name": "fontSize",
-      "value": "",
-      "type": "Integer"
+      "type": "Integer",
+      "value": ""
      },
      {
       "name": "color",
-      "value": "",
-      "type": "Color"
+      "type": "Color",
+      "value": ""
      },
      {
       "name": "cssClass",
-      "value": "",
-      "type": "String"
+      "type": "String",
+      "value": ""
      }
-    ]
+    ],
+    "type": "LayoutHtml",
+    "typeDesc": "Html"
    },
    {
     "id": "65c4868c-72c6-c0f8-8124-47526c5fd0b2",
@@ -2007,137 +2502,137 @@
    },
    {
     "id": "5756e9c6-0203-7fbf-99db-cc1e4d5069d3",
-    "type": "LayoutRow",
-    "typeDesc": "Row",
     "parent": "02d25dd4-8fc4-4b05-7ca4-2a64acf89b31",
     "properties": [
      {
       "name": "name",
-      "value": "quartzTitle",
-      "type": "Id"
+      "type": "Id",
+      "value": "quartzTitle"
      },
      {
       "name": "height",
-      "value": "",
-      "type": "Integer"
+      "type": "Integer",
+      "value": ""
      },
      {
       "name": "backgroundColor",
-      "value": "",
-      "type": "Color"
+      "type": "Color",
+      "value": ""
      },
      {
       "name": "roundCorners",
-      "value": "",
-      "type": "RoundCorners"
+      "type": "RoundCorners",
+      "value": ""
      },
      {
       "name": "textAlign",
-      "value": "",
-      "type": "TextAlign"
+      "type": "TextAlign",
+      "value": ""
      },
      {
       "name": "cssClass",
-      "value": "",
-      "type": "String"
+      "type": "String",
+      "value": ""
      }
-    ]
+    ],
+    "type": "LayoutRow",
+    "typeDesc": "Row"
    },
    {
     "id": "38fc1e5a-dfc2-030b-d061-b1d9b1771ec0",
-    "type": "LayoutBootstrapColumn",
-    "typeDesc": "Column",
     "parent": "5756e9c6-0203-7fbf-99db-cc1e4d5069d3",
     "properties": [
      {
       "name": "name",
-      "value": "",
-      "type": "Id"
+      "type": "Id",
+      "value": ""
      },
      {
       "name": "bootstrapExtraSmall",
-      "value": "12",
-      "type": "String"
+      "type": "String",
+      "value": "12"
      },
      {
       "name": "bootstrapSmall",
-      "value": "",
-      "type": "String"
+      "type": "String",
+      "value": ""
      },
      {
       "name": "bootstrapMedium",
-      "value": "",
-      "type": "String"
+      "type": "String",
+      "value": ""
      },
      {
       "name": "bootstrapLarge",
-      "value": "",
-      "type": "String"
+      "type": "String",
+      "value": ""
      },
      {
       "name": "bootstrapCssClass",
-      "value": "",
-      "type": "String"
+      "type": "String",
+      "value": ""
      },
      {
       "name": "height",
-      "value": "30",
-      "type": "Integer"
+      "type": "Integer",
+      "value": "25"
      },
      {
       "name": "backgroundColor",
-      "value": "",
-      "type": "Color"
+      "type": "Color",
+      "value": ""
      },
      {
       "name": "roundCorners",
-      "value": "",
-      "type": "RoundCorners"
+      "type": "RoundCorners",
+      "value": ""
      },
      {
       "name": "textAlign",
-      "value": "",
-      "type": "TextAlign"
+      "type": "TextAlign",
+      "value": ""
      },
      {
       "name": "cssClass",
-      "value": "",
-      "type": "String"
+      "type": "String",
+      "value": ""
      }
-    ]
+    ],
+    "type": "LayoutBootstrapColumn",
+    "typeDesc": "Column"
    },
    {
     "id": "0043fd3a-28c1-67ab-675e-89afde8764af",
-    "type": "LayoutHtml",
-    "typeDesc": "Html",
     "parent": "38fc1e5a-dfc2-030b-d061-b1d9b1771ec0",
     "properties": [
      {
       "name": "name",
-      "value": "",
-      "type": "Id"
+      "type": "Id",
+      "value": ""
      },
      {
       "name": "html",
-      "value": "<h2>Quartz</h2> ",
-      "type": "Html"
+      "type": "Html",
+      "value": "<h3>Quartz</h3> "
      },
      {
       "name": "fontSize",
-      "value": "",
-      "type": "Integer"
+      "type": "Integer",
+      "value": ""
      },
      {
       "name": "color",
-      "value": "",
-      "type": "Color"
+      "type": "Color",
+      "value": ""
      },
      {
       "name": "cssClass",
-      "value": "",
-      "type": "String"
+      "type": "String",
+      "value": ""
      }
-    ]
+    ],
+    "type": "LayoutHtml",
+    "typeDesc": "Html"
    },
    {
     "id": "d31ddd0e-4365-7fb9-8615-4b38f0eba720",
@@ -2171,7 +2666,7 @@
      {
       "name": "cssClass",
       "type": "String",
-      "value": ""
+      "value": "quartzBoxEnd"
      }
     ],
     "type": "LayoutRow",
@@ -2466,7 +2961,7 @@
     "typeDesc": "Html"
    },
    {
-    "id": "243070f6-b6aa-b31e-4700-e9999dcb2ae6",
+    "id": "d2e7ec2c-87d4-5046-2132-55608750a975",
     "parent": "02d25dd4-8fc4-4b05-7ca4-2a64acf89b31",
     "properties": [
      {
@@ -2504,18 +2999,81 @@
     "typeDesc": "Row"
    },
    {
-    "id": "1c7fe0de-2aca-1a96-41a5-81148f7960c6",
-    "parent": "243070f6-b6aa-b31e-4700-e9999dcb2ae6",
+    "id": "143f38ef-781d-df58-15b7-f8e34c89cd2c",
+    "parent": "d2e7ec2c-87d4-5046-2132-55608750a975",
     "properties": [
      {
       "name": "name",
       "type": "Id",
-      "value": "success"
+      "value": "quartzName_new"
      },
      {
       "name": "bootstrapExtraSmall",
       "type": "String",
-      "value": "12"
+      "value": "4"
+     },
+     {
+      "name": "bootstrapSmall",
+      "type": "String",
+      "value": ""
+     },
+     {
+      "name": "bootstrapMedium",
+      "type": "String",
+      "value": ""
+     },
+     {
+      "name": "bootstrapLarge",
+      "type": "String",
+      "value": ""
+     },
+     {
+      "name": "bootstrapCssClass",
+      "type": "String",
+      "value": ""
+     },
+     {
+      "name": "height",
+      "type": "Integer",
+      "value": "60"
+     },
+     {
+      "name": "backgroundColor",
+      "type": "Color",
+      "value": ""
+     },
+     {
+      "name": "roundCorners",
+      "type": "RoundCorners",
+      "value": ""
+     },
+     {
+      "name": "textAlign",
+      "type": "TextAlign",
+      "value": ""
+     },
+     {
+      "name": "cssClass",
+      "type": "String",
+      "value": ""
+     }
+    ],
+    "type": "LayoutBootstrapColumn",
+    "typeDesc": "Column"
+   },
+   {
+    "id": "53cd4958-4bba-a399-6833-a4a6244baa98",
+    "parent": "d2e7ec2c-87d4-5046-2132-55608750a975",
+    "properties": [
+     {
+      "name": "name",
+      "type": "Id",
+      "value": "quartzUser_new"
+     },
+     {
+      "name": "bootstrapExtraSmall",
+      "type": "String",
+      "value": "4"
      },
      {
       "name": "bootstrapSmall",
@@ -2567,37 +3125,100 @@
     "typeDesc": "Column"
    },
    {
-    "id": "8a826383-5d3e-f399-1067-67a13df89d52",
-    "type": "LayoutHtml",
-    "typeDesc": "Html",
-    "parent": "1c7fe0de-2aca-1a96-41a5-81148f7960c6",
+    "id": "d4f866d6-b751-1f9f-5aa6-cb24d607fe7a",
+    "parent": "53cd4958-4bba-a399-6833-a4a6244baa98",
     "properties": [
      {
       "name": "name",
-      "value": "",
-      "type": "Id"
+      "type": "Id",
+      "value": ""
      },
      {
       "name": "html",
-      "value": "<a href=\"\" class=\"btn-finish btn-block btn-action\">Exchange my repository!</a> ",
-      "type": "Html"
+      "type": "Html",
+      "value": "<a id=\"exchangeBttn\" class=\"btn-finish btn-block btn-action\">Exchange my repository!</a> \r\n\r\n<script> \r\n    \r\n    $(\"#exchangeBttn\").on('click', function() {\r\n   alert (\"Trocando!!!\");\r\n    });\r\n    \r\n    \r\n    \r\n</script> "
      },
      {
       "name": "fontSize",
-      "value": "",
-      "type": "Integer"
+      "type": "Integer",
+      "value": ""
      },
      {
       "name": "color",
-      "value": "",
-      "type": "Color"
+      "type": "Color",
+      "value": ""
      },
      {
       "name": "cssClass",
-      "value": "",
-      "type": "String"
+      "type": "String",
+      "value": ""
      }
-    ]
+    ],
+    "type": "LayoutHtml",
+    "typeDesc": "Html"
+   },
+   {
+    "id": "6ee75ff6-cea5-59fd-99f5-3d208eef1a14",
+    "parent": "d2e7ec2c-87d4-5046-2132-55608750a975",
+    "properties": [
+     {
+      "name": "name",
+      "type": "Id",
+      "value": "quartzPasswd_new"
+     },
+     {
+      "name": "bootstrapExtraSmall",
+      "type": "String",
+      "value": "4"
+     },
+     {
+      "name": "bootstrapSmall",
+      "type": "String",
+      "value": ""
+     },
+     {
+      "name": "bootstrapMedium",
+      "type": "String",
+      "value": ""
+     },
+     {
+      "name": "bootstrapLarge",
+      "type": "String",
+      "value": ""
+     },
+     {
+      "name": "bootstrapCssClass",
+      "type": "String",
+      "value": ""
+     },
+     {
+      "name": "height",
+      "type": "Integer",
+      "value": "60"
+     },
+     {
+      "name": "backgroundColor",
+      "type": "Color",
+      "value": ""
+     },
+     {
+      "name": "roundCorners",
+      "type": "RoundCorners",
+      "value": ""
+     },
+     {
+      "name": "textAlign",
+      "type": "TextAlign",
+      "value": ""
+     },
+     {
+      "name": "cssClass",
+      "type": "String",
+      "value": ""
+     }
+    ],
+    "type": "LayoutBootstrapColumn",
+    "typeDesc": "Column"
    },
    {
     "id": "2ef1d32f-fe2e-71a3-b2db-82bd9619b583",

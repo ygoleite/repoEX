@@ -18,7 +18,7 @@
 		<content-type>
 			<title>Repo.EX</title>
 			<description></description>
-			<company name="Oncase" url="http://www.oncase.com.br/en" logo="repoEX/static/system/img/repoEX-logo.png"></company>
+			<company name="Oncase" url="http://www.oncase.com.br/en" logo="@PLUGIN_COMPANY_LOGO@"></company>
 		</content-type>
 	</content-types>
 	<content-generator
