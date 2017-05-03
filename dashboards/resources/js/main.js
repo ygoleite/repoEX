@@ -37,6 +37,7 @@ $("#rdioDbSel").on("click", function () {
 
 //\\-------------------------------------Validation Session-------------------------------------//
 
+//Ip Validation
 
 $('#ipForm').formValidation({
     framework: 'bootstrap',
@@ -60,25 +61,200 @@ $('#ipForm').formValidation({
 //Port Validation
 
 $('#portInput').formValidation({
-        framework: 'bootstrap',
-        icon: {
-            valid: 'glyphicon glyphicon-ok',
-            invalid: 'glyphicon glyphicon-remove',
-            validating: 'glyphicon glyphicon-refresh'
-        },
-        fields: {
-            portText: {
-                validators: {
-                    regexp: {
-                        regexp: /^\d{4,5}$/i,
-                        message: 'Port must be within 4 and 5 digits.'
-                    }
+    framework: 'bootstrap',
+    icon: {
+        valid: 'glyphicon glyphicon-ok',
+        invalid: 'glyphicon glyphicon-remove',
+        validating: 'glyphicon glyphicon-refresh'
+    },
+    fields: {
+        portText: {
+            validators: {
+                regexp: {
+                    regexp: /^\d{4,5}$/i,
+                    message: 'Port must be within 4 and 5 digits.'
                 }
             }
         }
-    });
+    }
+});
 
+//Hib DB Validation
 
+$('#hibDBnmForm').formValidation({
+    framework: 'bootstrap',
+    icon: {
+        valid: 'glyphicon glyphicon-ok',
+        invalid: 'glyphicon glyphicon-remove',
+        validating: 'glyphicon glyphicon-refresh'
+    },
+    fields: {
+        hibDBnm: {
+            validators: {
+                regexp: {
+                    regexp: /^[a-zA-Z0-9_\-\@\#\$\%\&\*\(\)\|\\\+\!]+$/i,
+                    message: 'Must be an alfanumeric String'
+                }
+            }
+        }
+    }
+});
+
+$('#hibDBuserForm').formValidation({
+    framework: 'bootstrap',
+    icon: {
+        valid: 'glyphicon glyphicon-ok',
+        invalid: 'glyphicon glyphicon-remove',
+        validating: 'glyphicon glyphicon-refresh'
+    },
+    fields: {
+        hibDBuser: {
+            validators: {
+                regexp: {
+                    regexp: /^[a-zA-Z0-9_\-\@\#\$\%\&\*\(\)\|\\\+\!]+$/i,
+                    message: 'Must be an alfanumeric String'
+                }
+            }
+        }
+    }
+});
+
+$('#hibDBpsswForm').formValidation({
+    framework: 'bootstrap',
+    icon: {
+        valid: 'glyphicon glyphicon-ok',
+        invalid: 'glyphicon glyphicon-remove',
+        validating: 'glyphicon glyphicon-refresh'
+    },
+    fields: {
+        hibDBpass: {
+            validators: {
+                regexp: {
+                    regexp: /^[a-zA-Z0-9_\-\@\#\$\%\&\*\(\)\|\\\+\!]+$/i,
+                    message: 'Must be an alfanumeric String'
+                }
+            }
+        }
+    }
+});
+
+//Jcr DB Validation
+
+$('#jcrDBnmForm').formValidation({
+    framework: 'bootstrap',
+    icon: {
+        valid: 'glyphicon glyphicon-ok',
+        invalid: 'glyphicon glyphicon-remove',
+        validating: 'glyphicon glyphicon-refresh'
+    },
+    fields: {
+        jcrDbInput: {
+            validators: {
+                regexp: {
+                    regexp: /^[a-zA-Z0-9_\-\@\#\$\%\&\*\(\)\|\\\+\!]+$/i,
+                    message: 'Must be an alfanumeric String'
+                }
+            }
+        }
+    }
+});
+
+$('#jcrDBuserForm').formValidation({
+    framework: 'bootstrap',
+    icon: {
+        valid: 'glyphicon glyphicon-ok',
+        invalid: 'glyphicon glyphicon-remove',
+        validating: 'glyphicon glyphicon-refresh'
+    },
+    fields: {
+        jcrDBuser: {
+            validators: {
+                regexp: {
+                    regexp: /^[a-zA-Z0-9_\-\@\#\$\%\&\*\(\)\|\\\+\!]+$/i,
+                    message: 'Must be an alfanumeric String'
+                }
+            }
+        }
+    }
+});
+
+$('#jcrDBpsswForm').formValidation({
+    framework: 'bootstrap',
+    icon: {
+        valid: 'glyphicon glyphicon-ok',
+        invalid: 'glyphicon glyphicon-remove',
+        validating: 'glyphicon glyphicon-refresh'
+    },
+    fields: {
+        jcrDBpass: {
+            validators: {
+                regexp: {
+                    regexp: /^[a-zA-Z0-9_\-\@\#\$\%\&\*\(\)\|\\\+\!]+$/i,
+                    message: 'Must be an alfanumeric String'
+                }
+            }
+        }
+    }
+});
+
+//Qtz DB Validation
+
+$('#qtzDBnmForm').formValidation({
+    framework: 'bootstrap',
+    icon: {
+        valid: 'glyphicon glyphicon-ok',
+        invalid: 'glyphicon glyphicon-remove',
+        validating: 'glyphicon glyphicon-refresh'
+    },
+    fields: {
+        qtzDBnm: {
+            validators: {
+                regexp: {
+                    regexp: /^[a-zA-Z0-9_\-\@\#\$\%\&\*\(\)\|\\\+\!]+$/i,
+                    message: 'Must be an alfanumeric String'
+                }
+            }
+        }
+    }
+});
+
+$('#qtzDBuserForm').formValidation({
+    framework: 'bootstrap',
+    icon: {
+        valid: 'glyphicon glyphicon-ok',
+        invalid: 'glyphicon glyphicon-remove',
+        validating: 'glyphicon glyphicon-refresh'
+    },
+    fields: {
+        qtzDBuser: {
+            validators: {
+                regexp: {
+                    regexp: /^[a-zA-Z0-9_\-\@\#\$\%\&\*\(\)\|\\\+\!]+$/i,
+                    message: 'Must be an alfanumeric String'
+                }
+            }
+        }
+    }
+});
+
+$('#qtzDBpsswForm').formValidation({
+    framework: 'bootstrap',
+    icon: {
+        valid: 'glyphicon glyphicon-ok',
+        invalid: 'glyphicon glyphicon-remove',
+        validating: 'glyphicon glyphicon-refresh'
+    },
+    fields: {
+        qtzDBpass: {
+            validators: {
+                regexp: {
+                    regexp: /^[a-zA-Z0-9_\-\@\#\$\%\&\*\(\)\|\\\+\!]+$/i,
+                    message: 'Must be an alfanumeric String'
+                }
+            }
+        }
+    }
+});
 
 //\\-------------------------------------Request Session-------------------------------------//
 
