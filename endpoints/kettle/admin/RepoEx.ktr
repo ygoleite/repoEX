@@ -150,6 +150,11 @@
         <description/>
       </parameter>
       <parameter>
+        <name>paramRepository</name>
+        <default_value/>
+        <description/>
+      </parameter>
+      <parameter>
         <name>paramSGBD</name>
         <default_value>SQLSERVER</default_value>
         <description/>
@@ -625,10 +630,199 @@
     </notepad>
     <notepad>
       <note>Driver - ok&#xd;&#xa;Hibernate Settings - ok&#xd;&#xa;Hibernate CFG - ok&#xd;&#xa;Audit - ok&#xd;&#xa;Quartz - ok&#xd;&#xa;applicationContext-spring-security-hibernate.properties - ok&#xd;&#xa;Conex&#xf5;es JDBC do Tomcat - ok&#xd;&#xa;&#xd;&#xa;Jackrabbit&#xd;&#xa;web.xml Desativar o HSQLDB</note>
-      <xloc>384</xloc>
-      <yloc>736</yloc>
+      <xloc>368</xloc>
+      <yloc>976</yloc>
       <width>350</width>
       <heigth>161</heigth>
+      <fontname>Arial</fontname>
+      <fontsize>10</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>0</fontcolorred>
+      <fontcolorgreen>0</fontcolorgreen>
+      <fontcolorblue>0</fontcolorblue>
+      <backgroundcolorred>255</backgroundcolorred>
+      <backgroundcolorgreen>205</backgroundcolorgreen>
+      <backgroundcolorblue>112</backgroundcolorblue>
+      <bordercolorred>100</bordercolorred>
+      <bordercolorgreen>100</bordercolorgreen>
+      <bordercolorblue>100</bordercolorblue>
+      <drawshadow>Y</drawshadow>
+    </notepad>
+    <notepad>
+      <note>Audit</note>
+      <xloc>608</xloc>
+      <yloc>448</yloc>
+      <width>40</width>
+      <heigth>25</heigth>
+      <fontname>Arial</fontname>
+      <fontsize>10</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>0</fontcolorred>
+      <fontcolorgreen>0</fontcolorgreen>
+      <fontcolorblue>0</fontcolorblue>
+      <backgroundcolorred>255</backgroundcolorred>
+      <backgroundcolorgreen>205</backgroundcolorgreen>
+      <backgroundcolorblue>112</backgroundcolorblue>
+      <bordercolorred>100</bordercolorred>
+      <bordercolorgreen>100</bordercolorgreen>
+      <bordercolorblue>100</bordercolorblue>
+      <drawshadow>Y</drawshadow>
+    </notepad>
+    <notepad>
+      <note>applicationContext-spring-security-hibernate.properties</note>
+      <xloc>48</xloc>
+      <yloc>272</yloc>
+      <width>324</width>
+      <heigth>25</heigth>
+      <fontname>Arial</fontname>
+      <fontsize>10</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>0</fontcolorred>
+      <fontcolorgreen>0</fontcolorgreen>
+      <fontcolorblue>0</fontcolorblue>
+      <backgroundcolorred>255</backgroundcolorred>
+      <backgroundcolorgreen>205</backgroundcolorgreen>
+      <backgroundcolorblue>112</backgroundcolorblue>
+      <bordercolorred>100</bordercolorred>
+      <bordercolorgreen>100</bordercolorgreen>
+      <bordercolorblue>100</bordercolorblue>
+      <drawshadow>Y</drawshadow>
+    </notepad>
+    <notepad>
+      <note>repo.ex.hibernate.cfg.xml</note>
+      <xloc>128</xloc>
+      <yloc>368</yloc>
+      <width>156</width>
+      <heigth>25</heigth>
+      <fontname>Arial</fontname>
+      <fontsize>10</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>0</fontcolorred>
+      <fontcolorgreen>0</fontcolorgreen>
+      <fontcolorblue>0</fontcolorblue>
+      <backgroundcolorred>255</backgroundcolorred>
+      <backgroundcolorgreen>205</backgroundcolorgreen>
+      <backgroundcolorblue>112</backgroundcolorblue>
+      <bordercolorred>100</bordercolorred>
+      <bordercolorgreen>100</bordercolorgreen>
+      <bordercolorblue>100</bordercolorblue>
+      <drawshadow>Y</drawshadow>
+    </notepad>
+    <notepad>
+      <note>Quartz</note>
+      <xloc>496</xloc>
+      <yloc>448</yloc>
+      <width>49</width>
+      <heigth>25</heigth>
+      <fontname>Arial</fontname>
+      <fontsize>10</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>0</fontcolorred>
+      <fontcolorgreen>0</fontcolorgreen>
+      <fontcolorblue>0</fontcolorblue>
+      <backgroundcolorred>255</backgroundcolorred>
+      <backgroundcolorgreen>205</backgroundcolorgreen>
+      <backgroundcolorblue>112</backgroundcolorblue>
+      <bordercolorred>100</bordercolorred>
+      <bordercolorgreen>100</bordercolorgreen>
+      <bordercolorblue>100</bordercolorblue>
+      <drawshadow>Y</drawshadow>
+    </notepad>
+    <notepad>
+      <note>Tomcat context.xml</note>
+      <xloc>176</xloc>
+      <yloc>464</yloc>
+      <width>124</width>
+      <heigth>25</heigth>
+      <fontname>Arial</fontname>
+      <fontsize>10</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>0</fontcolorred>
+      <fontcolorgreen>0</fontcolorgreen>
+      <fontcolorblue>0</fontcolorblue>
+      <backgroundcolorred>255</backgroundcolorred>
+      <backgroundcolorgreen>205</backgroundcolorgreen>
+      <backgroundcolorblue>112</backgroundcolorblue>
+      <bordercolorred>100</bordercolorred>
+      <bordercolorgreen>100</bordercolorgreen>
+      <bordercolorblue>100</bordercolorblue>
+      <drawshadow>Y</drawshadow>
+    </notepad>
+    <notepad>
+      <note>Del Pentaho.xml</note>
+      <xloc>32</xloc>
+      <yloc>656</yloc>
+      <width>106</width>
+      <heigth>25</heigth>
+      <fontname>Arial</fontname>
+      <fontsize>10</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>0</fontcolorred>
+      <fontcolorgreen>0</fontcolorgreen>
+      <fontcolorblue>0</fontcolorblue>
+      <backgroundcolorred>255</backgroundcolorred>
+      <backgroundcolorgreen>205</backgroundcolorgreen>
+      <backgroundcolorblue>112</backgroundcolorblue>
+      <bordercolorred>100</bordercolorred>
+      <bordercolorgreen>100</bordercolorgreen>
+      <bordercolorblue>100</bordercolorblue>
+      <drawshadow>Y</drawshadow>
+    </notepad>
+    <notepad>
+      <note>Jackrabbit</note>
+      <xloc>512</xloc>
+      <yloc>560</yloc>
+      <width>69</width>
+      <heigth>25</heigth>
+      <fontname>Arial</fontname>
+      <fontsize>10</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>0</fontcolorred>
+      <fontcolorgreen>0</fontcolorgreen>
+      <fontcolorblue>0</fontcolorblue>
+      <backgroundcolorred>255</backgroundcolorred>
+      <backgroundcolorgreen>205</backgroundcolorgreen>
+      <backgroundcolorblue>112</backgroundcolorblue>
+      <bordercolorred>100</bordercolorred>
+      <bordercolorgreen>100</bordercolorgreen>
+      <bordercolorblue>100</bordercolorblue>
+      <drawshadow>Y</drawshadow>
+    </notepad>
+    <notepad>
+      <note>Backups</note>
+      <xloc>768</xloc>
+      <yloc>96</yloc>
+      <width>61</width>
+      <heigth>25</heigth>
+      <fontname>Arial</fontname>
+      <fontsize>10</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>0</fontcolorred>
+      <fontcolorgreen>0</fontcolorgreen>
+      <fontcolorblue>0</fontcolorblue>
+      <backgroundcolorred>255</backgroundcolorred>
+      <backgroundcolorgreen>205</backgroundcolorgreen>
+      <backgroundcolorblue>112</backgroundcolorblue>
+      <bordercolorred>100</bordercolorred>
+      <bordercolorgreen>100</bordercolorgreen>
+      <bordercolorblue>100</bordercolorblue>
+      <drawshadow>Y</drawshadow>
+    </notepad>
+    <notepad>
+      <note>Copy 4 Drivers</note>
+      <xloc>432</xloc>
+      <yloc>176</yloc>
+      <width>94</width>
+      <heigth>25</heigth>
       <fontname>Arial</fontname>
       <fontsize>10</fontsize>
       <fontbold>N</fontbold>
@@ -699,7 +893,7 @@
     <hop>
       <from>Get Variables</from>
       <to>Path</to>
-      <enabled>N</enabled>
+      <enabled>Y</enabled>
     </hop>
     <hop>
       <from>Path</from>
@@ -714,16 +908,6 @@
     <hop>
       <from>HibReplace</from>
       <to>Repo.Ex HibCFG</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
-      <from>Clean</from>
-      <to>OUTPUT</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
-      <from>Repo.Ex HibSets</from>
-      <to>BKP Qtz</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
@@ -752,26 +936,6 @@
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>1 calc</from>
-      <to>RepoEx Audit</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
-      <from>2 calc</from>
-      <to>RepoEx Audit</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
-      <from>3 calc</from>
-      <to>RepoEx Audit</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
-      <from>4 calc</from>
-      <to>RepoEx Audit</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
       <from>BKP Audit</from>
       <to>BKP APPContext</to>
       <enabled>Y</enabled>
@@ -789,16 +953,6 @@
     <hop>
       <from>CxtReplace</from>
       <to>Repo.Ex Cxt</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
-      <from>RepoEx Quartz</from>
-      <to>AppContext</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
-      <from>Repo.Ex Cxt</from>
-      <to>HibCFG</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
@@ -842,27 +996,17 @@
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>BKP TomcatCntt</from>
-      <to>Remove 2</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
       <from>Remove 2</from>
       <to>Switch &#x2f; Case</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
       <from>Repo.Ex HibCFG</from>
-      <to>Remove 3</to>
+      <to>Remove 6</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>Del pentaho.xml</from>
-      <to>Clean</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
-      <from>File exists 1</from>
+      <from>File exists</from>
       <to>Filter exists 1</to>
       <enabled>Y</enabled>
     </hop>
@@ -872,17 +1016,12 @@
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>Filter exists 1</from>
-      <to>Clean</to>
+      <from>Remove 7</from>
+      <to>File exists</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>Remove 4</from>
-      <to>File exists 1</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
-      <from>Remove 3</from>
+      <from>Remove 6</from>
       <to>TomcatContext</to>
       <enabled>Y</enabled>
     </hop>
@@ -898,7 +1037,112 @@
     </hop>
     <hop>
       <from>Repo.Ex TcCntt</from>
+      <to>Remove 7</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>BKP TomcatCntt</from>
+      <to>BKP Jackrabbit</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>BKP Jackrabbit</from>
+      <to>Remove 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Del pentaho.xml</from>
+      <to>Remove 8</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Filter exists 1</from>
+      <to>Remove 8</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>4 calc</from>
+      <to>Remove 3</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>3 calc</from>
+      <to>Remove 3</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>2 calc</from>
+      <to>Remove 3</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>1 calc</from>
+      <to>Remove 3</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Remove 3</from>
+      <to>RepoEx Audit</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>RepoEx Quartz</from>
       <to>Remove 4</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Remove 4</from>
+      <to>AppContext</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Repo.Ex Cxt</from>
+      <to>Remove 5</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Remove 5</from>
+      <to>HibCFG</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Remove 8</from>
+      <to>Jackrabbit</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Jackrabbit</from>
+      <to>JclRbt Replace</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>JclRbt Replace</from>
+      <to>Repo.Ex JclRbt</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Repo.Ex JclRbt</from>
+      <to>Remove 9</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Clean</from>
+      <to>OUTPUT</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Repo.Ex HibSets</from>
+      <to>BKP Qtz</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Set Variables</from>
+      <to>Clean</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Remove 9</from>
+      <to>Set Variables</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
@@ -1008,6 +1252,21 @@
       <calc_type>ADD</calc_type>
       <field_a>PATH</field_a>
       <field_b>FileTcCnttSqlServer</field_b>
+      <field_c/>
+      <value_type>String</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <remove>N</remove>
+      <conversion_mask/>
+      <decimal_symbol/>
+      <grouping_symbol/>
+      <currency_symbol/>
+    </calculation>
+    <calculation>
+      <field_name>FileJckRbt</field_name>
+      <calc_type>ADD</calc_type>
+      <field_a>PATH</field_a>
+      <field_b>FileJckRbt_Sqlserver</field_b>
       <field_c/>
       <value_type>String</value_type>
       <value_length>-1</value_length>
@@ -1143,6 +1402,21 @@
       <grouping_symbol/>
       <currency_symbol/>
     </calculation>
+    <calculation>
+      <field_name>FileJckRbt</field_name>
+      <calc_type>ADD</calc_type>
+      <field_a>PATH</field_a>
+      <field_b>FileJckRbt_Oracle</field_b>
+      <field_c/>
+      <value_type>String</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <remove>N</remove>
+      <conversion_mask/>
+      <decimal_symbol/>
+      <grouping_symbol/>
+      <currency_symbol/>
+    </calculation>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -1268,6 +1542,21 @@
       <grouping_symbol/>
       <currency_symbol/>
     </calculation>
+    <calculation>
+      <field_name>FileJckRbt</field_name>
+      <calc_type>ADD</calc_type>
+      <field_a>PATH</field_a>
+      <field_b>FileJckRbt_Postgresql</field_b>
+      <field_c/>
+      <value_type>String</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <remove>N</remove>
+      <conversion_mask/>
+      <decimal_symbol/>
+      <grouping_symbol/>
+      <currency_symbol/>
+    </calculation>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -1383,6 +1672,21 @@
       <calc_type>ADD</calc_type>
       <field_a>PATH_META_INF</field_a>
       <field_b>FileTcCnttMysql</field_b>
+      <field_c/>
+      <value_type>String</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <remove>N</remove>
+      <conversion_mask/>
+      <decimal_symbol/>
+      <grouping_symbol/>
+      <currency_symbol/>
+    </calculation>
+    <calculation>
+      <field_name>FileJckRbt</field_name>
+      <calc_type>ADD</calc_type>
+      <field_a>PATH</field_a>
+      <field_b>FileJckRbt_Mysql</field_b>
       <field_c/>
       <value_type>String</value_type>
       <value_length>-1</value_length>
@@ -1959,6 +2263,90 @@
         <precision>-1</precision>
         <set_empty_string>N</set_empty_string>
       </field>
+      <field>
+        <name>FileJackrabbit_ORIG</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif>jackrabbit&#x2f;repository.xml</nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+      <field>
+        <name>FileJackrabbit_ORIG2</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif>jackrabbit&#x2f;repository2.xml</nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+      <field>
+        <name>FileJackrabbit_BKP</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif>jackrabbit&#x2f;repository-bkp-</nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+      <field>
+        <name>FileJckRbt_Mysql</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif>&#x2f;basefiles&#x2f;repo.ex.repository_mysql5.xml</nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+      <field>
+        <name>FileJckRbt_Oracle</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif>&#x2f;basefiles&#x2f;repo.ex.repository_oracle10g.xml</nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+      <field>
+        <name>FileJckRbt_Postgresql</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif>&#x2f;basefiles&#x2f;repo.ex.repository_postgresql.xml</nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+      <field>
+        <name>FileJckRbt_Sqlserver</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif>&#x2f;basefiles&#x2f;repo.ex.repository_sqlserver.xml</nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
     </fields>
     <cluster_schema/>
     <remotesteps>
@@ -2032,7 +2420,7 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>576</xloc>
+      <xloc>336</xloc>
       <yloc>304</yloc>
       <draw>Y</draw>
     </GUI>
@@ -2064,8 +2452,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>832</xloc>
-      <yloc>192</yloc>
+      <xloc>944</xloc>
+      <yloc>112</yloc>
       <draw>Y</draw>
     </GUI>
     </step>
@@ -2096,7 +2484,7 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>944</xloc>
+      <xloc>832</xloc>
       <yloc>112</yloc>
       <draw>Y</draw>
     </GUI>
@@ -2128,8 +2516,40 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>832</xloc>
+      <xloc>736</xloc>
       <yloc>32</yloc>
+      <draw>Y</draw>
+    </GUI>
+    </step>
+
+  <step>
+    <name>BKP Jackrabbit</name>
+    <type>ProcessFiles</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <sourcefilenamefield>FileJkRbt_ORIG</sourcefilenamefield>
+    <targetfilenamefield>FileJkRbt_BKP_DT</targetfilenamefield>
+    <operation_type>copy</operation_type>
+    <addresultfilenames>N</addresultfilenames>
+    <overwritetargetfile>Y</overwritetargetfile>
+    <createparentfolder>N</createparentfolder>
+    <simulate>N</simulate>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>944</xloc>
+      <yloc>192</yloc>
       <draw>Y</draw>
     </GUI>
     </step>
@@ -2160,8 +2580,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>832</xloc>
-      <yloc>112</yloc>
+      <xloc>944</xloc>
+      <yloc>32</yloc>
       <draw>Y</draw>
     </GUI>
     </step>
@@ -2192,7 +2612,7 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>944</xloc>
+      <xloc>832</xloc>
       <yloc>192</yloc>
       <draw>Y</draw>
     </GUI>
@@ -2674,6 +3094,66 @@
       <grouping_symbol/>
       <currency_symbol/>
     </calculation>
+    <calculation>
+      <field_name>FileJkRbt_ORIG</field_name>
+      <calc_type>ADD</calc_type>
+      <field_a>PATH_Sys</field_a>
+      <field_b>FileJackrabbit_ORIG</field_b>
+      <field_c/>
+      <value_type>String</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <remove>N</remove>
+      <conversion_mask/>
+      <decimal_symbol/>
+      <grouping_symbol/>
+      <currency_symbol/>
+    </calculation>
+    <calculation>
+      <field_name>FileJkRbt_ORIG2</field_name>
+      <calc_type>ADD</calc_type>
+      <field_a>PATH_Sys</field_a>
+      <field_b>FileJackrabbit_ORIG2</field_b>
+      <field_c/>
+      <value_type>String</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <remove>N</remove>
+      <conversion_mask/>
+      <decimal_symbol/>
+      <grouping_symbol/>
+      <currency_symbol/>
+    </calculation>
+    <calculation>
+      <field_name>FileJkRbt_BKP_1</field_name>
+      <calc_type>ADD3</calc_type>
+      <field_a>PATH_Sys</field_a>
+      <field_b>FileJackrabbit_BKP</field_b>
+      <field_c>DateTime</field_c>
+      <value_type>String</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <remove>Y</remove>
+      <conversion_mask/>
+      <decimal_symbol/>
+      <grouping_symbol/>
+      <currency_symbol/>
+    </calculation>
+    <calculation>
+      <field_name>FileJkRbt_BKP_DT</field_name>
+      <calc_type>ADD</calc_type>
+      <field_a>FileJkRbt_BKP_1</field_a>
+      <field_b>xml</field_b>
+      <field_c/>
+      <value_type>String</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <remove>N</remove>
+      <conversion_mask/>
+      <decimal_symbol/>
+      <grouping_symbol/>
+      <currency_symbol/>
+    </calculation>
     <cluster_schema/>
     <remotesteps>
       <input>
@@ -2722,8 +3202,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>576</xloc>
-      <yloc>608</yloc>
+      <xloc>592</xloc>
+      <yloc>784</yloc>
       <draw>Y</draw>
     </GUI>
     </step>
@@ -2754,7 +3234,7 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>544</xloc>
+      <xloc>528</xloc>
       <yloc>112</yloc>
       <draw>Y</draw>
     </GUI>
@@ -2786,7 +3266,7 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>624</xloc>
+      <xloc>608</xloc>
       <yloc>112</yloc>
       <draw>Y</draw>
     </GUI>
@@ -2818,7 +3298,7 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>544</xloc>
+      <xloc>528</xloc>
       <yloc>192</yloc>
       <draw>Y</draw>
     </GUI>
@@ -2850,7 +3330,7 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>624</xloc>
+      <xloc>608</xloc>
       <yloc>192</yloc>
       <draw>Y</draw>
     </GUI>
@@ -2910,7 +3390,7 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>496</xloc>
+      <xloc>240</xloc>
       <yloc>304</yloc>
       <draw>Y</draw>
     </GUI>
@@ -2983,14 +3463,14 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>480</xloc>
+      <xloc>144</xloc>
       <yloc>672</yloc>
       <draw>Y</draw>
     </GUI>
     </step>
 
   <step>
-    <name>File exists 1</name>
+    <name>File exists</name>
     <type>FileExists</type>
     <description/>
     <distribute>Y</distribute>
@@ -3013,8 +3493,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>384</xloc>
-      <yloc>608</yloc>
+      <xloc>48</xloc>
+      <yloc>592</yloc>
       <draw>Y</draw>
     </GUI>
     </step>
@@ -3031,7 +3511,7 @@
       <schema_name/>
     </partitioning>
 <send_true_to>Del pentaho.xml</send_true_to>
-<send_false_to>Clean</send_false_to>
+<send_false_to>Remove 8</send_false_to>
     <compare>
 <condition>
  <negated>N</negated>
@@ -3048,8 +3528,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>480</xloc>
-      <yloc>608</yloc>
+      <xloc>144</xloc>
+      <yloc>592</yloc>
       <draw>Y</draw>
     </GUI>
     </step>
@@ -3083,7 +3563,7 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>544</xloc>
+      <xloc>528</xloc>
       <yloc>32</yloc>
       <draw>Y</draw>
     </GUI>
@@ -3417,8 +3897,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>272</xloc>
-      <yloc>304</yloc>
+      <xloc>48</xloc>
+      <yloc>400</yloc>
       <draw>Y</draw>
     </GUI>
     </step>
@@ -3477,8 +3957,132 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>192</xloc>
-      <yloc>304</yloc>
+      <xloc>144</xloc>
+      <yloc>400</yloc>
+      <draw>Y</draw>
+    </GUI>
+    </step>
+
+  <step>
+    <name>Jackrabbit</name>
+    <type>LoadFileInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <include>N</include>
+    <include_field/>
+    <rownum>N</rownum>
+    <addresultfile>Y</addresultfile>
+    <IsIgnoreEmptyFile>N</IsIgnoreEmptyFile>
+    <rownum_field/>
+    <encoding>UTF-8</encoding>
+    <file>
+      <name/>
+      <filemask/>
+      <exclude_filemask/>
+      <file_required>N</file_required>
+      <include_subfolders>N</include_subfolders>
+      </file>
+    <fields>
+      <field>
+        <name>jcr_content</name>
+        <element_type>content</element_type>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+        </field>
+      </fields>
+    <limit>0</limit>
+    <IsInFields>Y</IsInFields>
+    <DynamicFilenameField>FileJckRbt</DynamicFilenameField>
+    <shortFileFieldName/>
+    <pathFieldName/>
+    <hiddenFieldName/>
+    <lastModificationTimeFieldName/>
+    <uriNameFieldName/>
+    <rootUriNameFieldName/>
+    <extensionFieldName/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>400</xloc>
+      <yloc>592</yloc>
+      <draw>Y</draw>
+    </GUI>
+    </step>
+
+  <step>
+    <name>JclRbt Replace</name>
+    <type>Janino</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+       <formula><field_name>jcr1</field_name>
+<formula_string>jcr_content.replace&#x28;&#x22;repoex_localhost&#x22;,DB_IP_NAME&#x29;</formula_string>
+<value_type>String</value_type>
+<value_length>-1</value_length>
+<value_precision>-1</value_precision>
+<replace_field/>
+</formula>
+       <formula><field_name>jcr2</field_name>
+<formula_string>jcr1.replace&#x28;&#x22;repoex_port&#x22;,PORT&#x29;</formula_string>
+<value_type>String</value_type>
+<value_length>-1</value_length>
+<value_precision>-1</value_precision>
+<replace_field/>
+</formula>
+       <formula><field_name>jcr3</field_name>
+<formula_string>jcr2.replace&#x28;&#x22;repoex_dbname&#x22;,JCR_DBNAME&#x29;</formula_string>
+<value_type>String</value_type>
+<value_length>-1</value_length>
+<value_precision>-1</value_precision>
+<replace_field/>
+</formula>
+       <formula><field_name>jcr4</field_name>
+<formula_string>jcr3.replace&#x28;&#x22;repoex_username&#x22;,JCR_USER&#x29;</formula_string>
+<value_type>String</value_type>
+<value_length>-1</value_length>
+<value_precision>-1</value_precision>
+<replace_field/>
+</formula>
+       <formula><field_name>jcr5_end</field_name>
+<formula_string>jcr4.replace&#x28;&#x22;repoex_password&#x22;,JCR_PASS&#x29;</formula_string>
+<value_type>String</value_type>
+<value_length>-1</value_length>
+<value_precision>-1</value_precision>
+<replace_field/>
+</formula>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>496</xloc>
+      <yloc>592</yloc>
       <draw>Y</draw>
     </GUI>
     </step>
@@ -3502,8 +4106,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>656</xloc>
-      <yloc>608</yloc>
+      <xloc>688</xloc>
+      <yloc>784</yloc>
       <draw>Y</draw>
     </GUI>
     </step>
@@ -3564,6 +4168,17 @@
         <whole_word>no</whole_word>
         <case_sensitive>no</case_sensitive>
       </field>
+      <field>
+        <in_stream_name>PATH</in_stream_name>
+        <out_stream_name>FolderDeleteRepository</out_stream_name>
+        <use_regex>no</use_regex>
+        <replace_string>repoEX&#x2f;endpoints&#x2f;kettle&#x2f;admin</replace_string>
+        <replace_by_string>jackrabbit&#x2f;repository2&#x2f;</replace_by_string>
+        <set_empty_string>N</set_empty_string>
+        <replace_field_by_string/>
+        <whole_word>no</whole_word>
+        <case_sensitive>no</case_sensitive>
+      </field>
     </fields>
     <cluster_schema/>
     <remotesteps>
@@ -3611,6 +4226,8 @@
       </remove>      <remove>        <name>BASEFILES</name>
       </remove>      <remove>        <name>FileTomcatContext_ORIG</name>
       </remove>      <remove>        <name>FileTomcatContext_BKP</name>
+      </remove>      <remove>        <name>FileJackrabbit_ORIG</name>
+      </remove>      <remove>        <name>FileJackrabbit_BKP</name>
       </remove>    </fields>    <cluster_schema/>
     <remotesteps>
       <input>
@@ -3650,11 +4267,14 @@
       </remove>      <remove>        <name>FileHib_BKP_DT</name>
       </remove>      <remove>        <name>FileQtz_BKP_DT</name>
       </remove>      <remove>        <name>FileTomcatCntt_BKP_DT</name>
+      </remove>      <remove>        <name>FileJkRbt_BKP_DT</name>
       </remove>      <remove>        <name>PATH_Sys</name>
       </remove>      <remove>        <name>PATH_TOMCAT_LIB</name>
       </remove>      <remove>        <name>PATH_repoexbasefiles</name>
       </remove>      <remove>        <name>DateTime</name>
       </remove>      <remove>        <name>PATH_META_INF</name>
+      </remove>      <remove>        <name>FileHib_ORIG</name>
+      </remove>      <remove>        <name>FileHib_RepoEx</name>
       </remove>    </fields>    <cluster_schema/>
     <remotesteps>
       <input>
@@ -3697,28 +4317,14 @@
       </remove>      <remove>        <name>FileCxtOracle</name>
       </remove>      <remove>        <name>FileCxtPostgresql</name>
       </remove>      <remove>        <name>FileCxtSqlServer</name>
-      </remove>      <remove>        <name>FileHib_ORIG</name>
-      </remove>      <remove>        <name>FileHib_RepoEx</name>
-      </remove>      <remove>        <name>FileHib_CFGrepoex</name>
-      </remove>      <remove>        <name>FileQtz_ORIG</name>
-      </remove>      <remove>        <name>FileAdt_ORIG</name>
-      </remove>      <remove>        <name>FileCxt_ORIG</name>
-      </remove>      <remove>        <name>FileAdt</name>
-      </remove>      <remove>        <name>FileHib</name>
-      </remove>      <remove>        <name>FileQtz</name>
-      </remove>      <remove>        <name>FileCxt</name>
-      </remove>      <remove>        <name>cxt_content</name>
-      </remove>      <remove>        <name>cxt1</name>
-      </remove>      <remove>        <name>cxt2</name>
-      </remove>      <remove>        <name>cxt3</name>
-      </remove>      <remove>        <name>cxt4</name>
-      </remove>      <remove>        <name>cxt5_end</name>
-      </remove>      <remove>        <name>hib_content</name>
-      </remove>      <remove>        <name>hib1</name>
-      </remove>      <remove>        <name>hib2</name>
-      </remove>      <remove>        <name>hib3</name>
-      </remove>      <remove>        <name>hib4</name>
-      </remove>      <remove>        <name>hib5_end</name>
+      </remove>      <remove>        <name>FileTcCnttMysql</name>
+      </remove>      <remove>        <name>FileTcCnttOracle</name>
+      </remove>      <remove>        <name>FileTcCnttPostgresql</name>
+      </remove>      <remove>        <name>FileTcCnttSqlServer</name>
+      </remove>      <remove>        <name>FileJckRbt_Mysql</name>
+      </remove>      <remove>        <name>FileJckRbt_Oracle</name>
+      </remove>      <remove>        <name>FileJckRbt_Postgresql</name>
+      </remove>      <remove>        <name>FileJckRbt_Sqlserver</name>
       </remove>    </fields>    <cluster_schema/>
     <remotesteps>
       <input>
@@ -3727,7 +4333,7 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>96</xloc>
+      <xloc>672</xloc>
       <yloc>400</yloc>
       <draw>Y</draw>
     </GUI>
@@ -3745,12 +4351,105 @@
       <schema_name/>
     </partitioning>
     <fields>        <select_unspecified>N</select_unspecified>
-      <remove>        <name>FileTcCnttMysql</name>
-      </remove>      <remove>        <name>FileTcCnttOracle</name>
-      </remove>      <remove>        <name>FileTcCnttPostgresql</name>
-      </remove>      <remove>        <name>FileTcCnttSqlServer</name>
-      </remove>      <remove>        <name>FileTcCntt</name>
-      </remove>      <remove>        <name>FileTomcatCntt_ORIG</name>
+      <remove>        <name>FileAdt</name>
+      </remove>      <remove>        <name>FileAdt_ORIG</name>
+      </remove>      <remove>        <name>FileQtz</name>
+      </remove>      <remove>        <name>FileQtz_ORIG</name>
+      </remove>    </fields>    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>512</xloc>
+      <yloc>304</yloc>
+      <draw>Y</draw>
+    </GUI>
+    </step>
+
+  <step>
+    <name>Remove 5</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <fields>        <select_unspecified>N</select_unspecified>
+      <remove>        <name>FileCxt</name>
+      </remove>      <remove>        <name>cxt_content</name>
+      </remove>      <remove>        <name>cxt1</name>
+      </remove>      <remove>        <name>cxt2</name>
+      </remove>      <remove>        <name>cxt3</name>
+      </remove>      <remove>        <name>cxt4</name>
+      </remove>      <remove>        <name>cxt5_end</name>
+      </remove>      <remove>        <name>FileCxt_ORIG</name>
+      </remove>    </fields>    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>48</xloc>
+      <yloc>304</yloc>
+      <draw>Y</draw>
+    </GUI>
+    </step>
+
+  <step>
+    <name>Remove 6</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <fields>        <select_unspecified>N</select_unspecified>
+      <remove>        <name>FileHib</name>
+      </remove>      <remove>        <name>hib_content</name>
+      </remove>      <remove>        <name>hib1</name>
+      </remove>      <remove>        <name>hib2</name>
+      </remove>      <remove>        <name>hib3</name>
+      </remove>      <remove>        <name>hib4</name>
+      </remove>      <remove>        <name>hib5_end</name>
+      </remove>      <remove>        <name>FileHib_CFGrepoex</name>
+      </remove>    </fields>    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>336</xloc>
+      <yloc>400</yloc>
+      <draw>Y</draw>
+    </GUI>
+    </step>
+
+  <step>
+    <name>Remove 7</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <fields>        <select_unspecified>N</select_unspecified>
+      <remove>        <name>FileTcCntt</name>
       </remove>      <remove>        <name>tccntt_content</name>
       </remove>      <remove>        <name>tccntt1</name>
       </remove>      <remove>        <name>tccntt2</name>
@@ -3760,6 +4459,7 @@
       </remove>      <remove>        <name>tccntt6</name>
       </remove>      <remove>        <name>tccntt7</name>
       </remove>      <remove>        <name>tccntt8_end</name>
+      </remove>      <remove>        <name>FileTomcatCntt_ORIG</name>
       </remove>    </fields>    <cluster_schema/>
     <remotesteps>
       <input>
@@ -3768,8 +4468,70 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>288</xloc>
-      <yloc>608</yloc>
+      <xloc>48</xloc>
+      <yloc>496</yloc>
+      <draw>Y</draw>
+    </GUI>
+    </step>
+
+  <step>
+    <name>Remove 8</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <fields>        <select_unspecified>N</select_unspecified>
+      <remove>        <name>FileDeletePentahoXML</name>
+      </remove>      <remove>        <name>FileDeletePentahoXMLexists</name>
+      </remove>    </fields>    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>240</xloc>
+      <yloc>592</yloc>
+      <draw>Y</draw>
+    </GUI>
+    </step>
+
+  <step>
+    <name>Remove 9</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <fields>        <select_unspecified>N</select_unspecified>
+      <remove>        <name>FileJckRbt</name>
+      </remove>      <remove>        <name>jcr_content</name>
+      </remove>      <remove>        <name>jcr1</name>
+      </remove>      <remove>        <name>jcr2</name>
+      </remove>      <remove>        <name>jcr3</name>
+      </remove>      <remove>        <name>jcr4</name>
+      </remove>      <remove>        <name>jcr5_end</name>
+      </remove>      <remove>        <name>FileJkRbt_ORIG</name>
+      </remove>    </fields>    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>688</xloc>
+      <yloc>592</yloc>
       <draw>Y</draw>
     </GUI>
     </step>
@@ -3838,7 +4600,7 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>416</xloc>
+      <xloc>144</xloc>
       <yloc>304</yloc>
       <draw>Y</draw>
     </GUI>
@@ -3908,8 +4670,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>96</xloc>
-      <yloc>304</yloc>
+      <xloc>240</xloc>
+      <yloc>400</yloc>
       <draw>Y</draw>
     </GUI>
     </step>
@@ -3940,8 +4702,78 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>944</xloc>
+      <xloc>832</xloc>
       <yloc>32</yloc>
+      <draw>Y</draw>
+    </GUI>
+    </step>
+
+  <step>
+    <name>Repo.Ex JclRbt</name>
+    <type>TextFileOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <separator/>
+    <enclosure/>
+    <enclosure_forced>N</enclosure_forced>
+    <enclosure_fix_disabled>Y</enclosure_fix_disabled>
+    <header>N</header>
+    <footer>N</footer>
+    <format>DOS</format>
+    <compression>None</compression>
+    <encoding>UTF-8</encoding>
+    <endedLine/>
+    <fileNameInField>Y</fileNameInField>
+    <fileNameField>FileJkRbt_ORIG2</fileNameField>
+    <create_parent_folder>N</create_parent_folder>
+    <file>
+      <name/>
+      <is_command>N</is_command>
+      <servlet_output>N</servlet_output>
+      <do_not_open_new_file_init>Y</do_not_open_new_file_init>
+      <extention/>
+      <append>N</append>
+      <split>N</split>
+      <haspartno>N</haspartno>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <SpecifyFormat>N</SpecifyFormat>
+      <date_time_format/>
+      <add_to_result_filenames>Y</add_to_result_filenames>
+      <pad>N</pad>
+      <fast_dump>N</fast_dump>
+      <splitevery>0</splitevery>
+    </file>
+    <fields>
+      <field>
+        <name>jcr5_end</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+    </fields>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>592</xloc>
+      <yloc>592</yloc>
       <draw>Y</draw>
     </GUI>
     </step>
@@ -4010,8 +4842,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>384</xloc>
-      <yloc>400</yloc>
+      <xloc>144</xloc>
+      <yloc>496</yloc>
       <draw>Y</draw>
     </GUI>
     </step>
@@ -4042,7 +4874,7 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>672</xloc>
+      <xloc>592</xloc>
       <yloc>400</yloc>
       <draw>Y</draw>
     </GUI>
@@ -4074,8 +4906,42 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>576</xloc>
+      <xloc>512</xloc>
       <yloc>400</yloc>
+      <draw>Y</draw>
+    </GUI>
+    </step>
+
+  <step>
+    <name>Set Variables</name>
+    <type>SetVariable</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <fields>
+      <field>
+        <field_name>FolderDeleteRepository</field_name>
+        <variable_name>paramRepository</variable_name>
+        <variable_type>PARENT_JOB</variable_type>
+        <default_value/>
+        </field>
+      </fields>
+    <use_formatting>Y</use_formatting>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>688</xloc>
+      <yloc>688</yloc>
       <draw>Y</draw>
     </GUI>
     </step>
@@ -4195,8 +5061,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>288</xloc>
-      <yloc>400</yloc>
+      <xloc>240</xloc>
+      <yloc>496</yloc>
       <draw>Y</draw>
     </GUI>
     </step>
@@ -4259,8 +5125,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>192</xloc>
-      <yloc>400</yloc>
+      <xloc>336</xloc>
+      <yloc>496</yloc>
       <draw>Y</draw>
     </GUI>
     </step>
@@ -4280,7 +5146,7 @@
       <displayHeader>Y</displayHeader>
       <limitRows>N</limitRows>
       <limitRowsNumber>0</limitRowsNumber>
-      <logmessage>&#x3d;&#x3d;&#x3d;&#x3d;&#x3d;&#x3d;&#x3d;&#x3d;&#x3d;&#x3d; My Params &#x3d;&#x3d;&#x3d;&#x3d;&#x3d;&#x3d;&#x3d;&#x3d;&#x3d;&#x3d;&#xd;&#xa;&#xd;&#xa;&#x24;&#x7b;paramSGBD&#x7d;&#xd;&#xa;&#x24;&#x7b;paramDB_IP_NAME&#x7d;&#xd;&#xa;&#x24;&#x7b;paramPORT&#x7d;&#xd;&#xa;&#x24;&#x7b;paramHIB_DBNAME&#x7d;&#xd;&#xa;&#x24;&#x7b;paramHIB_USER&#x7d;&#xd;&#xa;&#x24;&#x7b;paramHIB_PASS&#x7d;&#xd;&#xa;&#x24;&#x7b;paramJCR_DBNAME&#x7d;&#xd;&#xa;&#x24;&#x7b;paramJCR_USER&#x7d;&#xd;&#xa;&#x24;&#x7b;paramJCR_PASS&#x7d;&#xd;&#xa;&#x24;&#x7b;paramQTZ_DBNAME&#x7d;&#xd;&#xa;&#x24;&#x7b;paramQTZ_USER&#x7d;&#xd;&#xa;&#x24;&#x7b;paramQTZ_PASS&#x7d;&#xd;&#xa;&#x24;&#x7b;Internal.Transformation.Filename.Directory&#x7d;&#xd;&#xa;&#x3d;&#x3d;&#x3d;&#x3d;&#x3d;&#x3d;&#x3d;&#x3d;&#x3d;&#x3d; END OF PARAMS &#x3d;&#x3d;&#x3d;&#x3d;&#x3d;&#x3d;&#x3d;&#x3d;&#x3d;&#x3d;</logmessage>
+      <logmessage>-------------------&#xd;&#xa;Dentro da transformacao&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#x24;&#x7b;paramDB_IP_NAME&#x7d;</logmessage>
     <fields>
       </fields>
     <cluster_schema/>
@@ -4291,8 +5157,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>256</xloc>
-      <yloc>160</yloc>
+      <xloc>272</xloc>
+      <yloc>112</yloc>
       <draw>Y</draw>
     </GUI>
     </step>

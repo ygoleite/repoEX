@@ -22,13 +22,13 @@ $("#rdioDbSel").on("click", function () {
     console.log("----Into the Function DB SELECT----")
     dbSel = $("input:checked").val().trim();
 
-    if (dbSel == "PostgreSQL") {
+    if (dbSel == "POSTGRESQL") {
         $(portText)[0].placeholder = 5432
-    } else if (dbSel == "MySQL") {
+    } else if (dbSel == "MYSQL") {
         $(portText)[0].placeholder = 3306
-    } else if (dbSel == "Oracle DB 10/11/12") {
+    } else if (dbSel == "ORACLE") {
         $(portText)[0].placeholder = 1521
-    } else if (dbSel == "Microsoft SQL Server") {
+    } else if (dbSel == "SQLSERVER") {
         $(portText)[0].placeholder = 1433
     }
 
@@ -47,7 +47,7 @@ $('#ipForm').formValidation({
         validating: 'glyphicon glyphicon-refresh'
     },
     fields: {
-        ip: {
+        ipText: {
             validators: {
                 ip: {
                     message: 'Please enter a valid IP address'
@@ -337,10 +337,10 @@ $("#exchangeBttn").on('click', function () {
 
         console.log(objParam)
 
-        $.post("/pentaho/plugin/repoEX/api/repoex", objParam)
-            .done(function (data) {
-                alert("Data Loaded: " + data);
-                console.log(data)
+        $.post("/pentaho/plugin/repoEX/api/repoexjob", objParam)
+            .done(function (objParam) {
+                alert("Data Loaded: " + objParam);
+                console.log(objParam)
             });
 
     } else {
