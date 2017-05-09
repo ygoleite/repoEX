@@ -186,7 +186,7 @@
      {
       "name": "resourceCode",
       "type": "Resource",
-      "value": "body{\r\n    font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\r\n    font-size: 14px;\r\n    line-height: 1.42857143;\r\n    color: #58585A;\r\n}\r\n\r\n.sideColor {\r\n    background: rgba(159, 212, 74, 0.30);\r\n}\r\n\r\n.h2-titles {\r\n    margin-bottom: 4%;\r\n    border-bottom: 0.5px rgba(159, 212, 74, 0.51) solid;\r\n    padding-bottom: 0.5%;\r\n}\r\n\r\nh3{    \r\n    color: rgba(0, 0, 0, 0.44);\r\n    margin-left: 1.5%;\r\n    \r\n}\r\n\r\n.repoEx-logo{\r\n  background-image: url(/pentaho/content/repoEX/dashboards/resources/img/logoFull.png);\r\n   background-size:contain;\r\n   background-repeat: no-repeat;\r\n}\r\n\r\n\r\n.my-logo{\r\n    position: absolute;\r\n    top: 50%;\r\n    min-height: 75%;\r\n    display: block;\r\n    left: 50%;\r\n    -webkit-transform: translate(-50%, -50%);\r\n    max-width: 80%;\r\n}\r\n\r\n.headerMargin {\r\n    margin-bottom: 2%;\r\n}\r\n\r\n.row.no-gutter {\r\n  margin-left: 0;\r\n  margin-right: 0;\r\n}\r\n\r\n.row.no-gutter [class*='col-']:not(:first-child),\r\n.row.no-gutter [class*='col-']:not(:last-child) {\r\n  padding-right: 0;\r\n  padding-left: 0;\r\n}\r\n\r\n/* Form Control Session  */\r\n\r\n.has-success .help-block, .has-success .control-label, .has-success .radio, .has-success .checkbox, .has-success .radio-inline, .has-success .checkbox-inline {\r\n    color: #88C425;\r\n}\r\n\r\n.has-error .help-block, .has-error .control-label, .has-error .radio, .has-error .checkbox, .has-error .radio-inline, .has-error .checkbox-inline {\r\n    color: #E65E50;\r\n}\r\n\r\n.form-control-feedback {\r\n    top: 0px !important;\r\n    right: 4.5% !important;\r\n}\r\n\r\n.has-success .form-control-feedback {\r\n    color: #88C425;\r\n}\r\n\r\n/*.form-control {\r\n    width: 110%;\r\n}*/\r\n\r\n.ipPortAllign{\r\n    \r\n    padding-left: 13%;\r\n}\r\n\r\n\r\n.ipBoxMargin{\r\n    \r\n    margin-top: 3%;\r\n    \r\n}\r\n\r\n.dbSel-box {\r\n    margin-bottom: 3%;\r\n    margin-left: 76%;\r\n    margin-top: 4%;\r\n}\r\n\r\n.radioBox{\r\n    height: 80px;\r\n    margin-top: 2%;\r\n}\r\n\r\n\r\n.divIpBox{\r\n    padding-right: 0px;\r\n}\r\n\r\n.divPortBox{\r\n    padding-left: 0px;\r\n}\r\n\r\n.ipBox{    \r\n    border: solid green 1px;\r\n    border-radius: 10px;\r\n    border-right: 0px;\r\n    border-top-right-radius: 0px;\r\n    border-bottom-right-radius: 0px;    \r\n} \r\n\r\n.portBox{\r\n    \r\n    height:100px;\r\n    border: 1px green solid;\r\n    border-radius: 10px;\r\n    border-left: none;\r\n    border-bottom-left-radius: 0px;\r\n    border-top-left-radius: 0px;\r\n    \r\n}\r\n\r\n\r\n\r\n\r\n/*\r\n* -- Radio Style --\r\n*/\r\n\r\n.db-sel-rd {\r\n  list-style: none;\r\n  margin: 0;\r\n  padding: 0;\r\n}\r\n\r\n.db-sel-rd:after {\r\n  content: \"\";\r\n  clear: both;\r\n}\r\n\r\n.db-sel-rd {\r\n  border: 1px solid #ccc;\r\n  box-sizing: border-box;\r\n  float: left;\r\n  height: 70px;\r\n  position: relative;\r\n  width: 120px;\r\n  display: -webkit-box;\r\n}\r\n\r\n.db-sel-rd + .db-sel-rd{\r\n  margin-left: 25px;\r\n}\r\n\r\n.db-sel-rd label {\r\n  background: #fff no-repeat center center;\r\n  bottom: 1px;\r\n  cursor: pointer;\r\n  display: block;\r\n  font-size: 0;\r\n  left: 1px;\r\n  position: absolute;\r\n  right: 1px;\r\n  text-indent: 100%;\r\n  top: 1px;\r\n  white-space: nowrap;\r\n}\r\n\r\n.pgsql label {\r\n  background-image: url(/pentaho/content/repoEX/dashboards/resources/img/postgresql.png);\r\n   background-size:contain;\r\n}\r\n\r\n.mysql label {\r\n  background-image: url(/pentaho/content/repoEX/dashboards/resources/img/mysql.png);\r\n   background-size:contain;\r\n}\r\n\r\n.ora label {\r\n  background-image: url(/pentaho/content/repoEX/dashboards/resources/img/oradb.png);\r\n   background-size:contain;\r\n}\r\n\r\n.mssql label {\r\n  background-image: url(/pentaho/content/repoEX/dashboards/resources/img/mssql.png);\r\n   background-size:contain;\r\n}\r\n\r\n.db-sel-rd input:focus + label {\r\n  outline: 2px dotted #88C425;\r\n}\r\n\r\n.db-sel-rd input:checked + label {\r\n  outline: 4px solid #88C425;\r\n  margin: 0px;\r\n}\r\n\r\n.db-sel-rd input:checked + label:after {\r\n  background: url(/pentaho/content/repoEX/dashboards/resources/img/checked.svg);\r\n  background-size:contain;\r\n  background-color:#88C425;\r\n  bottom: -4px;\r\n  content: \"\";\r\n  display: inline-block;\r\n  height: 20px;\r\n  position: absolute;\r\n  right: -4px;\r\n  width: 20px;\r\n} \r\n\r\n@-moz-document url-prefix() {\r\n  .db-sel-rd input:checked + label:after {\r\n    bottom: 0;\r\n    right: 0;\r\n    background-color: #88C425;\r\n  }\r\n}\r\n\r\n\r\n\r\n/*\r\n* -- Checkbox Style --\r\n*/\r\n    .btn-info {\r\n    color: #fff;\r\n    background-color: #88C425;\r\n    border-color: #88C425;\r\n    }\r\n    \r\n    .btn-info:hover, .btn-info:focus, \r\n    .btn-info:active, .btn-info.active, \r\n    .open .dropdown-toggle.btn-info {\r\n    color: #fff;\r\n    background-color: #88C425;\r\n    border-color: #88C425;\r\n    }\r\n\r\n    .form-group input[type=\"checkbox\"] {\r\n    display: none;\r\n    }\r\n    \r\n    .form-group input[type=\"checkbox\"] + .btn-group > label span {\r\n        width: 20px;\r\n    }\r\n    \r\n    .form-group input[type=\"checkbox\"] + .btn-group > label span:first-child {\r\n        display: none;\r\n    }\r\n    .form-group input[type=\"checkbox\"] + .btn-group > label span:last-child {\r\n        display: inline-block;   \r\n    }\r\n    \r\n    .form-group input[type=\"checkbox\"]:checked + .btn-group > label span:first-child {\r\n        display: inline-block;\r\n    }\r\n    .form-group input[type=\"checkbox\"]:checked + .btn-group > label span:last-child {\r\n        display: none;   \r\n    } \r\n\r\n/*\r\n* -- Form Style --\r\n*/\r\n.form-control:focus {\r\n    border-color: #88C425;\r\n}\r\n\r\n.margin-btton{\r\n    \r\n    margin-top: 8%;\r\n}\r\n\r\n.btn-finish {\r\n    display: inline-block;\r\n    padding: 6px 12px;\r\n    margin-bottom: 0;\r\n    font-size: 14px;\r\n    font-weight: normal;\r\n    line-height: 1.42857143;\r\n    text-align: center;\r\n    white-space: nowrap;\r\n    vertical-align: middle;\r\n    cursor: pointer;\r\n    -webkit-user-select: none;\r\n    -moz-user-select: none;\r\n    -ms-user-select: none;\r\n    user-select: none;\r\n    background-image: none;\r\n    border: 1px solid rgb(136, 196, 37);\r\n    border-radius: 4px;\r\n}\r\n\r\na {\r\n    color: #fff;\r\n    text-decoration: none;\r\n}\r\n\r\na {\r\n    background: #88c425;\r\n}\r\n\r\na:focus {\r\n    outline: thin dotted;\r\n    outline: 5px auto white;\r\n    outline-color: white;\r\n    outline-style: auto;\r\n    outline-width: 5px;\r\n    outline-offset: -2px;\r\n}\r\n\r\n\r\na:hover, a:focus {\r\n    color: #FFF;\r\n    text-decoration: none;\r\n}\r\n\r\n\r\n.quartzBoxEnd {\r\n    margin-bottom: 3%;\r\n} \r\n\r\n.footerMain {\r\n    margin-left: -30px;\r\n    margin-right: -30px;\r\n}\r\n\r\n\r\n.oncase-logo{\r\n    position: absolute;\r\n    top: 50%;\r\n    left: 50%;\r\n    -webkit-transform: translate(-50%, -50%);\r\n    max-width: 20%;\r\n}\r\n\r\n.footerBox {\r\n   margin-left: 0px;\r\n    margin-right: 0px;\r\n    padding-left: 0px;\r\n    padding-right: 0px;\r\n    right: 3.3%;\r\n    width: 106.54% !important;\r\n    float: left;\r\n    position: relative;\r\n} "
+      "value": "body{\r\n    font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\r\n    font-size: 14px;\r\n    line-height: 1.42857143;\r\n    color: #58585A;\r\n}\r\n\r\n.sideColor {\r\n    background: rgba(159, 212, 74, 0.30);\r\n}\r\n\r\n.h2-titles {\r\n    margin-bottom: 4%;\r\n    border-bottom: 0.5px rgba(159, 212, 74, 0.51) solid;\r\n    padding-bottom: 0.5%;\r\n}\r\n\r\nh3{    \r\n    color: rgba(0, 0, 0, 0.44);\r\n    margin-left: 1.5%;\r\n    \r\n}\r\n\r\n.repoEx-logo{\r\n  background-image: url(/pentaho/content/repoEX/dashboards/resources/img/logoFull.png);\r\n   background-size:contain;\r\n   background-repeat: no-repeat;\r\n}\r\n\r\n\r\n.my-logo {\r\n    position: absolute;\r\n    top: 50%;\r\n    height: 70%;\r\n    display: block;\r\n    left: 50%;\r\n    -webkit-transform: translate(-50%, -50%);\r\n    width: auto;\r\n}\r\n\r\n.headerMargin {\r\n    margin-bottom: 2%;\r\n}\r\n\r\n.row.no-gutter {\r\n  margin-left: 0;\r\n  margin-right: 0;\r\n}\r\n\r\n.row.no-gutter [class*='col-']:not(:first-child),\r\n.row.no-gutter [class*='col-']:not(:last-child) {\r\n  padding-right: 0;\r\n  padding-left: 0;\r\n}\r\n\r\n/* Form Control Session  */\r\n\r\n.has-success .help-block, .has-success .control-label, .has-success .radio, .has-success .checkbox, .has-success .radio-inline, .has-success .checkbox-inline {\r\n    color: #88C425;\r\n}\r\n\r\n.has-error .help-block, .has-error .control-label, .has-error .radio, .has-error .checkbox, .has-error .radio-inline, .has-error .checkbox-inline {\r\n    color: #E65E50;\r\n}\r\n\r\n.form-control-feedback {\r\n    top: 0px !important;\r\n    right: 4.5% !important;\r\n}\r\n\r\n.has-success .form-control-feedback {\r\n    color: #88C425;\r\n}\r\n\r\n/*.form-control {\r\n    width: 110%;\r\n}*/\r\n\r\n.ipPortAllign{\r\n    \r\n    padding-left: 13%;\r\n}\r\n\r\n\r\n.ipBoxMargin{\r\n    \r\n    margin-top: 3%;\r\n    \r\n}\r\n\r\n.dbSel-box {\r\n    margin-bottom: 3%;\r\n    margin-left: 76%;\r\n    margin-top: 4%;\r\n}\r\n\r\n.radioBox{\r\n    height: 80px;\r\n    margin-top: 2%;\r\n}\r\n\r\n\r\n.divIpBox{\r\n    padding-right: 0px;\r\n}\r\n\r\n.divPortBox{\r\n    padding-left: 0px;\r\n}\r\n\r\n.ipBox{    \r\n    border: solid green 1px;\r\n    border-radius: 10px;\r\n    border-right: 0px;\r\n    border-top-right-radius: 0px;\r\n    border-bottom-right-radius: 0px;    \r\n} \r\n\r\n.portBox{\r\n    \r\n    height:100px;\r\n    border: 1px green solid;\r\n    border-radius: 10px;\r\n    border-left: none;\r\n    border-bottom-left-radius: 0px;\r\n    border-top-left-radius: 0px;\r\n}\r\n\r\n\r\n/*\r\n* -- Radio Style --\r\n*/\r\n\r\n.db-sel-rd {\r\n  list-style: none;\r\n  margin: 0;\r\n  padding: 0;\r\n}\r\n\r\n.db-sel-rd:after {\r\n  content: \"\";\r\n  clear: both;\r\n}\r\n\r\n.db-sel-rd {\r\n  border: 1px solid #ccc;\r\n  box-sizing: border-box;\r\n  float: left;\r\n  height: 70px;\r\n  position: relative;\r\n  width: 120px;\r\n  display: -webkit-box;\r\n}\r\n\r\n.db-sel-rd + .db-sel-rd{\r\n  margin-left: 25px;\r\n}\r\n\r\n.db-sel-rd label {\r\n  background: #fff no-repeat center center;\r\n  bottom: 1px;\r\n  cursor: pointer;\r\n  display: block;\r\n  font-size: 0;\r\n  left: 1px;\r\n  position: absolute;\r\n  right: 1px;\r\n  text-indent: 100%;\r\n  top: 1px;\r\n  white-space: nowrap;\r\n}\r\n\r\n.pgsql label {\r\n  background-image: url(/pentaho/content/repoEX/dashboards/resources/img/postgresql.png);\r\n   background-size:contain;\r\n}\r\n\r\n.mysql label {\r\n  background-image: url(/pentaho/content/repoEX/dashboards/resources/img/mysql.png);\r\n   background-size:contain;\r\n}\r\n\r\n.ora label {\r\n  background-image: url(/pentaho/content/repoEX/dashboards/resources/img/oradb.png);\r\n   background-size:contain;\r\n}\r\n\r\n.mssql label {\r\n  background-image: url(/pentaho/content/repoEX/dashboards/resources/img/mssql.png);\r\n   background-size:contain;\r\n}\r\n\r\n.db-sel-rd input:focus + label {\r\n  outline: 2px dotted #88C425;\r\n}\r\n\r\n.db-sel-rd input:checked + label {\r\n  outline: 4px solid #88C425;\r\n  margin: 0px;\r\n}\r\n\r\n.db-sel-rd input:checked + label:after {\r\n  background: url(/pentaho/content/repoEX/dashboards/resources/img/checked.svg);\r\n  background-size:contain;\r\n  background-color:#88C425;\r\n  bottom: -4px;\r\n  content: \"\";\r\n  display: inline-block;\r\n  height: 20px;\r\n  position: absolute;\r\n  right: -4px;\r\n  width: 20px;\r\n} \r\n\r\n@-moz-document url-prefix() {\r\n  .db-sel-rd input:checked + label:after {\r\n    bottom: 0;\r\n    right: 0;\r\n    background-color: #88C425;\r\n  }\r\n}\r\n\r\n\r\n\r\n/*\r\n* -- Checkbox Style --\r\n*/\r\n    .btn-info {\r\n    color: #fff;\r\n    background-color: #88C425;\r\n    border-color: #88C425;\r\n    }\r\n    \r\n    .btn-info:hover, .btn-info:focus, \r\n    .btn-info:active, .btn-info.active, \r\n    .open .dropdown-toggle.btn-info {\r\n    color: #fff;\r\n    background-color: #88C425;\r\n    border-color: #88C425;\r\n    }\r\n\r\n    .form-group input[type=\"checkbox\"] {\r\n    display: none;\r\n    }\r\n    \r\n    .form-group input[type=\"checkbox\"] + .btn-group > label span {\r\n        width: 20px;\r\n    }\r\n    \r\n    .form-group input[type=\"checkbox\"] + .btn-group > label span:first-child {\r\n        display: none;\r\n    }\r\n    .form-group input[type=\"checkbox\"] + .btn-group > label span:last-child {\r\n        display: inline-block;   \r\n    }\r\n    \r\n    .form-group input[type=\"checkbox\"]:checked + .btn-group > label span:first-child {\r\n        display: inline-block;\r\n    }\r\n    .form-group input[type=\"checkbox\"]:checked + .btn-group > label span:last-child {\r\n        display: none;   \r\n    } \r\n\r\n/*\r\n* -- Form Style --\r\n*/\r\n.form-control:focus {\r\n    border-color: #88C425;\r\n}\r\n\r\n.margin-btton{\r\n    \r\n    margin-top: 5%;\r\n}\r\n\r\n.btn-finish {\r\n    display: inline-block;\r\n    padding: 6px 12px;\r\n    margin-bottom: 0;\r\n    font-size: 14px;\r\n    font-weight: normal;\r\n    line-height: 1.42857143;\r\n    text-align: center;\r\n    white-space: nowrap;\r\n    vertical-align: middle;\r\n    cursor: pointer;\r\n    -webkit-user-select: none;\r\n    -moz-user-select: none;\r\n    -ms-user-select: none;\r\n    user-select: none;\r\n    background-image: none;\r\n    border: 1px solid rgb(136, 196, 37);\r\n    border-radius: 4px;\r\n}\r\n\r\na {\r\n    color: #fff;\r\n    text-decoration: none;\r\n}\r\n\r\na {\r\n    background: #88c425;\r\n}\r\n\r\na:focus {\r\n    outline: thin dotted;\r\n    outline: 5px auto white;\r\n    outline-color: white;\r\n    outline-style: auto;\r\n    outline-width: 5px;\r\n    outline-offset: -2px;\r\n}\r\n\r\n\r\na:hover, a:focus {\r\n    color: #FFF;\r\n    text-decoration: none;\r\n}\r\n\r\n\r\n.quartzBoxEnd {\r\n    margin-bottom: 3%;\r\n}\r\n\r\n\r\n.debugSel-box {\r\n    margin-bottom: 3%;\r\n    margin-left: 80%;\r\n    margin-top: 4%;\r\n}\r\n\r\n.footerMain {\r\n    margin-left: -30px;\r\n    margin-right: -30px;\r\n}\r\n\r\n\r\n.oncase-logo{\r\n    position: absolute;\r\n    top: 50%;\r\n    left: 50%;\r\n    -webkit-transform: translate(-50%, -50%);\r\n    max-width: 20%;\r\n}\r\n\r\n.footerBox {\r\n    margin-left: 0px;\r\n    margin-right: 0px;\r\n    padding-left: 0px;\r\n    padding-right: 0px;\r\n    right: 3.45%;\r\n    width: 107.0% !important;\r\n    float: left;\r\n    position: relative;\r\n} "
      },
      {
       "name": "resourceType",
@@ -777,7 +777,7 @@
      {
       "name": "height",
       "type": "Integer",
-      "value": "1130"
+      "value": "1200"
      },
      {
       "name": "backgroundColor",
@@ -2799,7 +2799,7 @@
      {
       "name": "html",
       "type": "Html",
-      "value": "\r\n<form id=\"qtzDBnmForm\">\r\n<!-- Quartz DB name-->\r\n    <div class=\"form-group\">\r\n      <label class=\"col-md-12 control-label\" for=\"qtzDBnm\">Database</label>  \r\n      <div class=\"col-md-12\">\r\n        <input id=\"qtzDBnm\" name=\"qtzDBnm\" type=\"text\" placeholder=\"Quartz\" class=\"form-control input-md\">\r\n       \r\n      </div>\r\n    </div> \r\n    \r\n</form> "
+      "value": "\r\n<form id=\"qtzDBnmForm\">\r\n<!-- Quartz DB name-->\r\n    <div class=\"form-group\">\r\n      <label class=\"col-md-12 control-label\" for=\"qtzDBnm\">Database</label>  \r\n      <div class=\"col-md-12\">\r\n        <input id=\"qtzDBnm\" name=\"qtzDBnm\" type=\"text\" placeholder=\"quartz\" class=\"form-control input-md\">\r\n       \r\n      </div>\r\n    </div> \r\n    \r\n</form> "
      },
      {
       "name": "fontSize",
@@ -2992,6 +2992,140 @@
       "name": "html",
       "type": "Html",
       "value": "<form id=\"qtzDBpsswForm\">\r\n<!-- Password input-->\r\n    <div class=\"form-group\">\r\n      <label class=\"col-md-12 control-label\" for=\"qtzDBpass\">Password</label>\r\n      <div class=\"col-md-12\">\r\n        <input id=\"qtzDBpass\" name=\"qtzDBpass\" type=\"text\" placeholder=\"\" class=\"form-control input-md\">\r\n        \r\n      </div>\r\n    </div>\r\n</form> "
+     },
+     {
+      "name": "fontSize",
+      "type": "Integer",
+      "value": ""
+     },
+     {
+      "name": "color",
+      "type": "Color",
+      "value": ""
+     },
+     {
+      "name": "cssClass",
+      "type": "String",
+      "value": ""
+     }
+    ],
+    "type": "LayoutHtml",
+    "typeDesc": "Html"
+   },
+   {
+    "id": "c8ae9e34-4959-b2a5-4f7c-03218993e120",
+    "parent": "02d25dd4-8fc4-4b05-7ca4-2a64acf89b31",
+    "properties": [
+     {
+      "name": "name",
+      "type": "Id",
+      "value": "debugMode"
+     },
+     {
+      "name": "height",
+      "type": "Integer",
+      "value": ""
+     },
+     {
+      "name": "backgroundColor",
+      "type": "Color",
+      "value": ""
+     },
+     {
+      "name": "roundCorners",
+      "type": "RoundCorners",
+      "value": ""
+     },
+     {
+      "name": "textAlign",
+      "type": "TextAlign",
+      "value": ""
+     },
+     {
+      "name": "cssClass",
+      "type": "String",
+      "value": ""
+     }
+    ],
+    "type": "LayoutRow",
+    "typeDesc": "Row"
+   },
+   {
+    "id": "3e47b02a-b064-c3c5-6068-636d594a7acc",
+    "parent": "c8ae9e34-4959-b2a5-4f7c-03218993e120",
+    "properties": [
+     {
+      "name": "name",
+      "type": "Id",
+      "value": "debugCol"
+     },
+     {
+      "name": "bootstrapExtraSmall",
+      "type": "String",
+      "value": "12"
+     },
+     {
+      "name": "bootstrapSmall",
+      "type": "String",
+      "value": ""
+     },
+     {
+      "name": "bootstrapMedium",
+      "type": "String",
+      "value": ""
+     },
+     {
+      "name": "bootstrapLarge",
+      "type": "String",
+      "value": ""
+     },
+     {
+      "name": "bootstrapCssClass",
+      "type": "String",
+      "value": ""
+     },
+     {
+      "name": "height",
+      "type": "Integer",
+      "value": "30"
+     },
+     {
+      "name": "backgroundColor",
+      "type": "Color",
+      "value": ""
+     },
+     {
+      "name": "roundCorners",
+      "type": "RoundCorners",
+      "value": ""
+     },
+     {
+      "name": "textAlign",
+      "type": "TextAlign",
+      "value": ""
+     },
+     {
+      "name": "cssClass",
+      "type": "String",
+      "value": "debugSel-box"
+     }
+    ],
+    "type": "LayoutBootstrapColumn",
+    "typeDesc": "Column"
+   },
+   {
+    "id": "2262dd40-e727-f622-80f7-788320e91ae6",
+    "parent": "3e47b02a-b064-c3c5-6068-636d594a7acc",
+    "properties": [
+     {
+      "name": "name",
+      "type": "Id",
+      "value": ""
+     },
+     {
+      "name": "html",
+      "type": "Html",
+      "value": "\r\n<div class=\"[ form-group ]\" style=\"margin-top: 3%;margin-bottom: 2%;\">\r\n    <input type=\"checkbox\" name=\"debugCheck\" id=\"debugCheck\" autocomplete=\"off\" />\r\n    <div class=\"[ btn-group ]\">\r\n        <label for=\"debugCheck\" class=\"[ btn btn-info ]\">\r\n            <span class=\"[ glyphicon glyphicon-ok ]\"></span>\r\n            <span> </span>\r\n        </label>\r\n        <label for=\"debugCheck\" class=\"[ btn btn-default active ]\">\r\n            Debug Mode?\r\n        </label>\r\n    </div>\r\n</div>\r\n "
      },
      {
       "name": "fontSize",
@@ -3309,7 +3443,7 @@
      {
       "name": "height",
       "type": "Integer",
-      "value": "1130"
+      "value": "1200"
      },
      {
       "name": "backgroundColor",

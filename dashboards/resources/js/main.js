@@ -14,6 +14,7 @@ var jcrPsswd = "";
 var qtzDb = "";
 var qtzUser = "";
 var qtzPsswd = "";
+var isDebug = "";
 
 console.log("-------------------------------------Main Start-------------------------------------")
 
@@ -262,12 +263,26 @@ $("#exchangeBttn").on('click', function () {
 
     var exchange = true;
 
+    if ($(".has-error").length>0){
+        var exchange = false;
+    };
+
     if (dbSel == "") {
 
         dbSel = $("input:checked").val().trim();
     }
 
-    console.log("Trocando!!!");
+    isDebug = $("#debugCheck")[0].checked
+
+    if (isDebug){
+        isDebug = "YES";
+    }else if(!isDebug){
+        isDebug = "NO";
+    };
+
+    console.log("Changing your repository...");
+    
+    //--------------------------- GET Ip input ---------------------------\\
 
     jdbcOption = $("#jdbcCheck-0")[0].checked
 
@@ -277,13 +292,15 @@ $("#exchangeBttn").on('click', function () {
         jdbcOption = "NO"
     };
 
+    //--------------------------- GET Ip input ---------------------------\\
     ip = $("#ipText")[0].value
-
+    
     if (ip == "") {
         ip = $("#ipText")[0].placeholder
         console.log("Using localhost as DB ip")
     };
 
+    //-------------------------- GET Port input --------------------------\\
     port = $("#portText")[0].value
 
     if (port == "") {
@@ -313,10 +330,13 @@ $("#exchangeBttn").on('click', function () {
             + hibDb + " : " + hibUser + " : " + hibPsswd + "\n"
             + jcrDb + " : " + jcrUser + " : " + jcrPsswd + "\n"
             + qtzDb + " : " + qtzUser + " : " + qtzPsswd + "\n");*/
+
         console.log(dbSel + " : " + jdbcOption + " : " + ip + " : " + port + "\n"
             + hibDb + " : " + hibUser + " : " + hibPsswd + "\n"
             + jcrDb + " : " + jcrUser + " : " + jcrPsswd + "\n"
             + qtzDb + " : " + qtzUser + " : " + qtzPsswd + "\n");
+
+        console.log("isDebug: "+isDebug);
         //------------------------- SET PARAMS to ETL -------------------------\\
 
         var objParam = {
@@ -332,19 +352,24 @@ $("#exchangeBttn").on('click', function () {
             paramparamJCR_PASS: jcrPsswd,
             paramparamQTZ_DBNAME: qtzDb,
             paramparamQTZ_USER: qtzUser,
-            paramparamQTZ_PASS: qtzPsswd
+            paramparamQTZ_PASS: qtzPsswd,
+            paramparamDEBUG: isDebug
         }
 
         console.log(objParam)
 
         $.post("/pentaho/plugin/repoEX/api/repoexjob", objParam)
-            .done(function (objParam) {
-                alert("Data Loaded: " + objParam);
-                console.log(objParam)
+            .done(function (data) {
+                if(isDebug=="YES"){
+                    var acceptDebug = confirm("Pentaho successfully migrated on debug mode, please check the files.")
+                }else{
+                    var acceptEx = confirm("Pentaho successfully migrated! \n Please shutdown your server, remove \\temp\\ and \\work\\ folders\n and start your server;");
+                };                
+                console.log(data)
             });
 
     } else {
-        alert("Missing some stuffs")
+       var confirmElse = confirm("Some fields are wrong. \n Please, check the informations again.")
     };
 
 });
