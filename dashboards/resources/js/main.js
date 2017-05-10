@@ -1,4 +1,4 @@
-//------------------------------------- Declaration Session -------------------------------------//
+//------------------------------------- Variables -------------------------------------//
 
 var dbSel = "";
 var jdbcOption = "";
@@ -20,7 +20,7 @@ console.log("-------------------------------------Main Start--------------------
 
 $("#rdioDbSel").on("click", function () {
 
-    console.log("----Into the Function DB SELECT----")
+    
     dbSel = $("input:checked").val().trim();
 
     if (dbSel == "POSTGRESQL") {
@@ -32,13 +32,12 @@ $("#rdioDbSel").on("click", function () {
     } else if (dbSel == "SQLSERVER") {
         $(portText)[0].placeholder = 1433
     }
-
-    console.log(dbSel + " " + $(portText)[0].placeholder);
+    
 });
 
 //\\-------------------------------------Validation Session-------------------------------------//
 
-//Ip Validation
+//******************************Ip Validation******************************
 
 $('#ipForm').formValidation({
     framework: 'bootstrap',
@@ -59,7 +58,7 @@ $('#ipForm').formValidation({
 });
 
 
-//Port Validation
+//******************************Port Validation******************************
 
 $('#portInput').formValidation({
     framework: 'bootstrap',
@@ -80,7 +79,7 @@ $('#portInput').formValidation({
     }
 });
 
-//Hib DB Validation
+//******************************Hib DB Validation******************************
 
 $('#hibDBnmForm').formValidation({
     framework: 'bootstrap',
@@ -139,7 +138,7 @@ $('#hibDBpsswForm').formValidation({
     }
 });
 
-//Jcr DB Validation
+//******************************Jcr DB Validation******************************
 
 $('#jcrDBnmForm').formValidation({
     framework: 'bootstrap',
@@ -198,7 +197,7 @@ $('#jcrDBpsswForm').formValidation({
     }
 });
 
-//Qtz DB Validation
+//******************************Qtz DB Validation******************************
 
 $('#qtzDBnmForm').formValidation({
     framework: 'bootstrap',
@@ -256,6 +255,9 @@ $('#qtzDBpsswForm').formValidation({
         }
     }
 });
+//\\-------------------------------------END OF VALIDATION SESSION-------------------------------------//
+
+
 
 //\\-------------------------------------Request Session-------------------------------------//
 
@@ -325,18 +327,6 @@ $("#exchangeBttn").on('click', function () {
 
 
     if (exchange == true) {
-
-        /*alert(dbSel + "\n" + jdbcOption + "\n" + ip + "\n" + port + "\n"
-            + hibDb + " : " + hibUser + " : " + hibPsswd + "\n"
-            + jcrDb + " : " + jcrUser + " : " + jcrPsswd + "\n"
-            + qtzDb + " : " + qtzUser + " : " + qtzPsswd + "\n");*/
-
-        console.log(dbSel + " : " + jdbcOption + " : " + ip + " : " + port + "\n"
-            + hibDb + " : " + hibUser + " : " + hibPsswd + "\n"
-            + jcrDb + " : " + jcrUser + " : " + jcrPsswd + "\n"
-            + qtzDb + " : " + qtzUser + " : " + qtzPsswd + "\n");
-
-        console.log("isDebug: "+isDebug);
         //------------------------- SET PARAMS to ETL -------------------------\\
 
         var objParam = {
@@ -364,8 +354,7 @@ $("#exchangeBttn").on('click', function () {
                     var acceptDebug = confirm("Pentaho successfully migrated on debug mode, please check the files.")
                 }else{
                     var acceptEx = confirm("Pentaho successfully migrated! \n Please shutdown your server, remove \\temp\\ and \\work\\ folders\n and start your server;");
-                };                
-                console.log(data)
+                };               
             });
 
     } else {
