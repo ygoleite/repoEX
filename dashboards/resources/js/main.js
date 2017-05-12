@@ -18,9 +18,43 @@ var isDebug = "";
 
 console.log("-------------------------------------Main Start-------------------------------------")
 
+function containerFluid(jQuery) {
+    // Code to add class "container-fluir" when the document is ready.
+    $(".container").addClass("container-fluid")
+    $(".container-fluid").removeClass("container")
+}
+
+function modalStart(jQuery) {
+
+    $("#caixa-confirmacao").dialog({
+        resizable: false,
+        height: 360,
+        width: 360,
+        modal: true,
+        buttons: {
+            "OK": function () {
+                $(this).dialog("close");
+            }
+        }
+
+    })
+};
+
+jQuery(
+    function () {
+        containerFluid();
+    }
+
+);
+
+setTimeout(function () {
+    modalStart();
+}, 500);
+
+
 $("#rdioDbSel").on("click", function () {
 
-    
+
     dbSel = $("input:checked").val().trim();
 
     if (dbSel == "POSTGRESQL") {
@@ -32,7 +66,7 @@ $("#rdioDbSel").on("click", function () {
     } else if (dbSel == "SQLSERVER") {
         $(portText)[0].placeholder = 1433
     }
-    
+
 });
 
 //\\-------------------------------------Validation Session-------------------------------------//
@@ -265,7 +299,7 @@ $("#exchangeBttn").on('click', function () {
 
     var exchange = true;
 
-    if ($(".has-error").length>0){
+    if ($(".has-error").length > 0) {
         var exchange = false;
     };
 
@@ -276,14 +310,14 @@ $("#exchangeBttn").on('click', function () {
 
     isDebug = $("#debugCheck")[0].checked
 
-    if (isDebug){
+    if (isDebug) {
         isDebug = "YES";
-    }else if(!isDebug){
+    } else if (!isDebug) {
         isDebug = "NO";
     };
 
     console.log("Changing your repository...");
-    
+
     //--------------------------- GET Ip input ---------------------------\\
 
     jdbcOption = $("#jdbcCheck-0")[0].checked
@@ -296,7 +330,7 @@ $("#exchangeBttn").on('click', function () {
 
     //--------------------------- GET Ip input ---------------------------\\
     ip = $("#ipText")[0].value
-    
+
     if (ip == "") {
         ip = $("#ipText")[0].placeholder
         console.log("Using localhost as DB ip")
@@ -350,15 +384,15 @@ $("#exchangeBttn").on('click', function () {
 
         $.post("/pentaho/plugin/repoEX/api/repoexjob", objParam)
             .done(function (data) {
-                if(isDebug=="YES"){
+                if (isDebug == "YES") {
                     var acceptDebug = confirm("Pentaho successfully migrated on debug mode, please check the files.")
-                }else{
+                } else {
                     var acceptEx = confirm("Pentaho successfully migrated! \n Please shutdown your server, remove \\temp\\ and \\work\\ folders\n and start your server;");
-                };               
+                };
             });
 
     } else {
-       var confirmElse = confirm("Some fields are wrong. \n Please, check the informations again.")
+        var confirmElse = confirm("Some fields are wrong. \n Please, check the informations again.")
     };
 
 });
