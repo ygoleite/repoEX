@@ -253,11 +253,11 @@
       <drawshadow>Y</drawshadow>
     </notepad>
     <notepad>
-      <note>Drivers - ok&#xd;&#xa;Hibernate Settings - ok&#xd;&#xa;Hibernate Config - ok&#xd;&#xa;Audit - ok&#xd;&#xa;Quartz - ok&#xd;&#xa;applicationContext-spring-security-hibernate.properties - ok&#xd;&#xa;Tomcat context.xml - ok&#xd;&#xa;Jackrabbit -ok&#xd;&#xa;&#xd;&#xa;web.xml Desativar o HSQLDB</note>
-      <xloc>128</xloc>
-      <yloc>784</yloc>
-      <width>350</width>
-      <heigth>161</heigth>
+      <note>Set jackrabbit repository folder Path</note>
+      <xloc>720</xloc>
+      <yloc>704</yloc>
+      <width>218</width>
+      <heigth>25</heigth>
       <fontname>Arial</fontname>
       <fontsize>10</fontsize>
       <fontbold>N</fontbold>
@@ -588,8 +588,6 @@
   <hop> <from>Repo.Ex JclRbt</from><to>Remove 9</to><enabled>Y</enabled> </hop>
   <hop> <from>Set Variables</from><to>Clean</to><enabled>Y</enabled> </hop>
   <hop> <from>Remove 9</from><to>Set Variables</to><enabled>Y</enabled> </hop>
-  <hop> <from>Clean</from><to>Set Status</to><enabled>Y</enabled> </hop>
-  <hop> <from>Set Status</from><to>OUTPUT</to><enabled>Y</enabled> </hop>
   <hop> <from>Debug</from><to>To DEBUG</to><enabled>Y</enabled> </hop>
   <hop> <from>To DEBUG</from><to>Repo.Ex HibSets</to><enabled>Y</enabled> </hop>
   <hop> <from>Debug</from><to>Repo.Ex HibSets</to><enabled>Y</enabled> </hop>
@@ -597,6 +595,7 @@
   <hop> <from>BKP Hib</from><to>BKP Qtz</to><enabled>Y</enabled> </hop>
   <hop> <from>Repo.Ex HibSets</from><to>Remove 2</to><enabled>Y</enabled> </hop>
   <hop> <from>BKP Jackrabbit</from><to>Debug</to><enabled>Y</enabled> </hop>
+  <hop> <from>Clean</from><to>OUTPUT</to><enabled>Y</enabled> </hop>
   </order>
   <step>
     <name>1 SQLSERVER</name>
@@ -1118,18 +1117,6 @@
         <decimal/>
         <group/>
         <nullif>.properties</nullif>
-        <length>-1</length>
-        <precision>-1</precision>
-        <set_empty_string>N</set_empty_string>
-      </field>
-      <field>
-        <name>Status</name>
-        <type>String</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <nullif>Error</nullif>
         <length>-1</length>
         <precision>-1</precision>
         <set_empty_string>N</set_empty_string>
@@ -2309,11 +2296,7 @@
            <method>none</method>
            <schema_name/>
            </partitioning>
-    <fields>      <field>        <name>Status</name>
-        <rename/>
-        <length>-2</length>
-        <precision>-2</precision>
-      </field>      <field>        <name>SGBD</name>
+    <fields>      <field>        <name>SGBD</name>
         <rename/>
         <length>-2</length>
         <precision>-2</precision>
@@ -2372,7 +2355,7 @@
       </field>        <select_unspecified>N</select_unspecified>
     </fields>     <cluster_schema/>
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>592</xloc>
+      <xloc>688</xloc>
       <yloc>784</yloc>
       <draw>Y</draw>
       </GUI>
@@ -2567,6 +2550,35 @@
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
       <xloc>128</xloc>
       <yloc>32</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Debug</name>
+    <type>FilterRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+<send_true_to>To DEBUG</send_true_to>
+<send_false_to>Repo.Ex HibSets</send_false_to>
+    <compare>
+<condition>
+ <negated>N</negated>
+ <leftvalue>DEBUG</leftvalue>
+ <function>&#x3d;</function>
+ <rightvalue/>
+ <value><name>constant</name><type>String</type><text>YES</text><length>-1</length><precision>-1</precision><isnull>N</isnull><mask/></value> </condition>
+    </compare>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>944</xloc>
+      <yloc>112</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
@@ -3897,34 +3909,6 @@
     </step>
 
   <step>
-    <name>Set Status</name>
-    <type>SetValueConstant</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-         <partitioning>
-           <method>none</method>
-           <schema_name/>
-           </partitioning>
-   <usevar>N</usevar>
-    <fields>
-      <field>
-        <name>Status</name>
-        <value>Success</value>
-        <mask/>
-        <set_empty_string>N</set_empty_string>
-        </field>
-      </fields>
-     <cluster_schema/>
- <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>688</xloc>
-      <yloc>784</yloc>
-      <draw>Y</draw>
-      </GUI>
-    </step>
-
-  <step>
     <name>Set Variables</name>
     <type>SetVariable</type>
     <description/>
@@ -4062,93 +4046,6 @@
     </step>
 
   <step>
-    <name>TomcatContext</name>
-    <type>LoadFileInput</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-         <partitioning>
-           <method>none</method>
-           <schema_name/>
-           </partitioning>
-    <include>N</include>
-    <include_field/>
-    <rownum>N</rownum>
-    <addresultfile>Y</addresultfile>
-    <IsIgnoreEmptyFile>N</IsIgnoreEmptyFile>
-    <rownum_field/>
-    <encoding>UTF-8</encoding>
-    <file>
-      <name/>
-      <filemask/>
-      <exclude_filemask/>
-      <file_required>N</file_required>
-      <include_subfolders>N</include_subfolders>
-      </file>
-    <fields>
-      <field>
-        <name>tccntt_content</name>
-        <element_type>content</element_type>
-        <type>String</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <length>-1</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
-        <repeat>N</repeat>
-        </field>
-      </fields>
-    <limit>0</limit>
-    <IsInFields>Y</IsInFields>
-    <DynamicFilenameField>FileTcCntt</DynamicFilenameField>
-    <shortFileFieldName/>
-    <pathFieldName/>
-    <hiddenFieldName/>
-    <lastModificationTimeFieldName/>
-    <uriNameFieldName/>
-    <rootUriNameFieldName/>
-    <extensionFieldName/>
-     <cluster_schema/>
- <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>336</xloc>
-      <yloc>496</yloc>
-      <draw>Y</draw>
-      </GUI>
-    </step>
-
-  <step>
-    <name>Debug</name>
-    <type>FilterRows</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-         <partitioning>
-           <method>none</method>
-           <schema_name/>
-           </partitioning>
-<send_true_to>To DEBUG</send_true_to>
-<send_false_to>Repo.Ex HibSets</send_false_to>
-    <compare>
-<condition>
- <negated>N</negated>
- <leftvalue>DEBUG</leftvalue>
- <function>&#x3d;</function>
- <rightvalue/>
- <value><name>constant</name><type>String</type><text>YES</text><length>-1</length><precision>-1</precision><isnull>N</isnull><mask/></value> </condition>
-    </compare>
-     <cluster_schema/>
- <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>944</xloc>
-      <yloc>112</yloc>
-      <draw>Y</draw>
-      </GUI>
-    </step>
-
-  <step>
     <name>To DEBUG</name>
     <type>ReplaceString</type>
     <description/>
@@ -4242,6 +4139,64 @@
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
       <xloc>848</xloc>
       <yloc>192</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>TomcatContext</name>
+    <type>LoadFileInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <include>N</include>
+    <include_field/>
+    <rownum>N</rownum>
+    <addresultfile>Y</addresultfile>
+    <IsIgnoreEmptyFile>N</IsIgnoreEmptyFile>
+    <rownum_field/>
+    <encoding>UTF-8</encoding>
+    <file>
+      <name/>
+      <filemask/>
+      <exclude_filemask/>
+      <file_required>N</file_required>
+      <include_subfolders>N</include_subfolders>
+      </file>
+    <fields>
+      <field>
+        <name>tccntt_content</name>
+        <element_type>content</element_type>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+        </field>
+      </fields>
+    <limit>0</limit>
+    <IsInFields>Y</IsInFields>
+    <DynamicFilenameField>FileTcCntt</DynamicFilenameField>
+    <shortFileFieldName/>
+    <pathFieldName/>
+    <hiddenFieldName/>
+    <lastModificationTimeFieldName/>
+    <uriNameFieldName/>
+    <rootUriNameFieldName/>
+    <extensionFieldName/>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>336</xloc>
+      <yloc>496</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
