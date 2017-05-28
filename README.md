@@ -9,8 +9,8 @@
 ## Requirements
 
 > - Latest Ctools Version (update in marketplace);
-- Pentaho BI Server 6.0 to above. (Can work in older versions, but wasn't tested.)
-- Your DBMS connections
+> - Pentaho BI Server 6.0 to above. (Can work in older versions, but wasn't tested.)
+> - Your DBMS connections
 
 ## Instalation or Deploy
 
@@ -19,8 +19,8 @@
 ## Quick Start
 
 > - First Step - Execute your DBMS scripts for Quartz, Hibernate and Jackrabbit , localized into *your/pentaho-server/pentaho-solutions/system/repoEX/Scripts*;
-- Second Step - Open the Biserver, access the plugin in menu *Tools*, type your DBMS information in the form and click in the button "*Exchange my repository!*"
-- Third Step - Restart your BI Server. If you have setted your correctly information, you'll be with your new repository setted.
+> - Second Step - Open the Biserver, access the plugin in menu *Tools*, type your DBMS information in the form and click in the button "*Exchange my repository!*"
+> - Third Step - Restart your BI Server. If you have setted your correctly information, you'll be with your new repository setted.
 
 ## JDBC
 
@@ -28,7 +28,7 @@
 
 ## Debug Mode
 
-> - Repo.Ex has a debug mode, which does not overwrite your old repository connection letting it to you do manually. For it, you need to mark the option in the end of the form and, then, exchange manually the connection files.
+> Repo.Ex has a debug mode, which does not overwrite your old repository connection letting it to you do manually. For it, you need to mark the option in the end of the form and, then, exchange manually the connection files.
 
 ## Conclusion
 
